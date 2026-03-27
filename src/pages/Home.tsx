@@ -91,7 +91,7 @@ const Home = () => {
           {pillars.map((p, i) => (
             <ScrollFadeIn key={i}>
               <div className="text-center">
-                <div className="w-3 h-3 rounded-full mx-auto md:mx-0 mb-4" style={{ backgroundColor: "#c5922f" }} />
+                <div className="w-3 h-3 rounded-full mx-auto mb-4" style={{ backgroundColor: "#c5922f" }} />
                 <h3 className="font-display font-bold text-white uppercase tracking-[2px] text-lg mb-3">{p.title}</h3>
                 <p className="text-white/80 text-sm font-body leading-relaxed">{p.line1}</p>
                 {p.line2 && <p className="text-white/80 text-sm font-body leading-relaxed">{p.line2}</p>}
