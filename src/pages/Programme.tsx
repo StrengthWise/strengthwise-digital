@@ -38,6 +38,7 @@ const Programme = () => {
     { quote: "Six months that changed how I work. I came out stronger, with the ability to step back, delegate effectively, and build a clearer vision for my team.", name: "Armelle L.", role: "Board Director, HR Consulting, Finland", image: armelleImg },
     { quote: "Raphaelle has a real talent for guiding participants to work with trust and depth. Her workshop is an extremely effective method for becoming fully aware of your impact on the people you manage.", name: "Jean-Philippe B.", role: "Managing Director, France", image: jphilippeImg },
     { quote: "Working with Raphaelle has been a genuine journey. Her ability to engage on deep topics, using NLP tools to clear old patterns, makes each session valuable and relatable.", name: "Maud P.", role: "Linguist, UK", image: maudImg },
+    { quote: "8 months working together on a wide range of topics, and the ability to adapt the coaching as needs evolved was a real pleasure. Raphaelle is always available and ready to adjust.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France", image: loicImg },
   ];
 
   const testimonialsFr = [
