@@ -9,17 +9,17 @@ const Programme = () => {
   const { lang, t } = useLang();
 
   const forYouItems = [
-    { en: "You're a manager or executive facing sustained high pressure", fr: "Tu es manager ou dirigeant(e) sous pression elevee" },
-    { en: "Decisions pile up and your clarity is fading", fr: "Les arbitrages s'accumulent et ta clarte recule" },
+    { en: "You're a manager or executive facing sustained high pressure", fr: "Tu es manager ou dirigeant(e) sous pression élevée" },
+    { en: "Decisions pile up and your clarity is fading", fr: "Les arbitrages s'accumulent et ta clarté recule" },
     { en: "You're still standing, but you need to reclaim control", fr: "Tu tiens encore la route, mais tu as besoin de reprendre la main" },
     { en: "You want concrete coaching, not comfort coaching", fr: "Tu cherches un accompagnement concret, pas du coaching confort" },
-    { en: "You don't have access to coaching through your company", fr: "Tu n'as pas acces au coaching via ton entreprise" },
+    { en: "You don't have access to coaching through your company", fr: "Tu n'as pas accès au coaching via ton entreprise" },
   ];
 
   const features = [
     { label: t("12 sessions / 90 days", "12 sessions / 90 jours"), standard: true, augmented: true },
     { label: t("Positive Intelligence Programme", "Programme Positive Intelligence"), standard: true, augmented: true },
-    { label: t("Personalised action plan", "Plan d'action personnalise"), standard: true, augmented: true },
+    { label: t("Personalised action plan", "Plan d'action personnalisé"), standard: true, augmented: true },
     { label: t("Weekly follow-up emails", "Emails de suivi hebdomadaires"), standard: true, augmented: true },
     { label: t("Flow Principles (Steven Kotler)", "Flow Principles (Steven Kotler)"), standard: false, augmented: true },
     { label: t("GPT tools between sessions", "Outils GPT entre les sessions"), standard: false, augmented: true },
@@ -34,9 +34,9 @@ const Programme = () => {
   ];
 
   const testimonialsFr = [
-    { quote: "Un soutien formidable pour retrouver mon intelligence positive quand les defis de la vie m'ont ebranlee. Son experience et son professionnalisme font une vraie difference.", name: "Marie-Zoe B.", role: "Board Director, HR Consulting, Finlande" },
-    { quote: "Sa capacite d'ecoute remarquable a pose les bases d'une experience de coaching vraiment personnalisee. Sa facon de meler idees pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam L.", role: "Account Manager, UK" },
-    { quote: "Travailler avec Raphaelle a ete incroyablement enrichissant. Elle m'a aidee a construire de bonnes habitudes, a definir une vision strategique pour mon activite et a la faire avancer sans m'epuiser.", name: "Katie L.", role: "Partner, ESG, UK" },
+    { quote: "Un soutien formidable pour retrouver mon intelligence positive quand les défis de la vie m'ont ébranlée. Son expérience et son professionnalisme font une vraie différence.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finlande" },
+    { quote: "Sa capacité d'écoute remarquable a posé les bases d'une expérience de coaching vraiment personnalisée. Sa façon de mêler idées pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam L.", role: "Account Manager, UK" },
+    { quote: "Travailler avec Raphaëlle a été incroyablement enrichissant. Elle m'a aidée à construire de bonnes habitudes, à définir une vision stratégique pour mon activité et à la faire avancer sans m'épuiser.", name: "Katie L.", role: "Partner, ESG, UK" },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
@@ -49,7 +49,7 @@ const Programme = () => {
           <ScrollFadeIn>
             <h1 className="section-title mb-4">FROM PRESSURE TO CLARITY</h1>
             <p className="font-body text-muted-foreground text-lg mb-8">
-              {t("90-day precision mental fitness for leaders under pressure.", "90 jours de mental fitness haute precision pour dirigeants et managers sous pression.")}
+              {t("90-day precision mental fitness for leaders under pressure.", "90 jours de mental fitness haute précision pour dirigeants et managers sous pression.")}
             </p>
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold">
               {t("Book a Clarity Call", "Book un Clarity Call")}
@@ -67,7 +67,7 @@ const Programme = () => {
             <p className="font-body text-foreground text-lg leading-relaxed">
               {t(
                 "You're performing. But you're running on willpower. The mental load keeps building, decisions pile up, and clarity fades. You know this can't go on.",
-                "Tu performes. Mais tu tiens a la force du poignet. La charge mentale monte, les arbitrages s'accumulent, la clarte recule. Tu sais que ca ne peut pas durer comme ca."
+                "Tu performes. Mais tu tiens à la force du poignet. La charge mentale monte, les arbitrages s'accumulent, la clarté recule. Tu sais que ça ne peut pas durer comme ça."
               )}
             </p>
           </ScrollFadeIn>
@@ -83,7 +83,7 @@ const Programme = () => {
             <p className="font-body text-foreground text-lg leading-relaxed">
               {t(
                 "We don't eliminate pressure. We change the way your mind and leadership respond to it. That's precision mental fitness.",
-                "On ne supprime pas la pression. On change la facon dont ton mental et ton leadership y repondent. C'est ca, le mental fitness haute precision."
+                "On ne supprime pas la pression. On change la façon dont ton mental et ton leadership y répondent. C'est ça, le mental fitness haute précision."
               )}
             </p>
           </ScrollFadeIn>
@@ -152,7 +152,7 @@ const Programme = () => {
             <p className="text-center text-sm text-muted-foreground font-body italic mt-8">
               {t(
                 "Limited availability. I work with a small number of clients at a time to guarantee quality.",
-                "Places limitees. J'accompagne un nombre restreint de personnes a la fois pour garantir la qualite."
+                "Places limitées. J'accompagne un nombre restreint de personnes à la fois pour garantir la qualité."
               )}
             </p>
           </ScrollFadeIn>
@@ -178,9 +178,9 @@ const Programme = () => {
 
       <CTASection
         titleEn="Ready to reclaim control?"
-        titleFr="Pret(e) a reprendre la main ?"
+        titleFr="Prêt(e) à reprendre la main ?"
         subtitleEn="Book a free 30-min Clarity Call. No pitch, no pressure. Just a diagnostic and an honest conversation."
-        subtitleFr="Book un Clarity Call de 30 minutes. Gratuit, sans engagement. Un mini-diagnostic et une conversation honnete."
+        subtitleFr="Book un Clarity Call de 30 minutes. Gratuit, sans engagement. Un mini-diagnostic et une conversation honnête."
         variant="teal"
       />
     </main>

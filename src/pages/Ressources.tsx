@@ -19,7 +19,7 @@ const Ressources = () => {
               <div className="card-sw flex flex-col h-full">
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Newsletter / Substack</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
-                  {t("Thinking on performance, clarity and leadership, straight to your inbox.", "Reflexions sur la performance, la clarte et le leadership, directement dans ta boite mail.")}
+                  {t("Thinking on performance, clarity and leadership, straight to your inbox.", "Réflexions sur la performance, la clarté et le leadership, directement dans ta boîte mail.")}
                 </p>
                 <a href="https://substack.com/@rapher" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
                   {t("Read on Substack", "Lire sur Substack")} <ExternalLink size={14} />
@@ -58,7 +58,7 @@ const Ressources = () => {
               <div className="card-sw flex flex-col h-full">
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Mighty Mind Coaching Cards</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
-                  {t("54 coaching cards. NLP, positive psychology, critical thinking in a single deck.", "54 cartes de coaching. PNL, psychologie positive et pensee critique en un seul jeu.")}
+                  {t("54 coaching cards. NLP, positive psychology, critical thinking in a single deck.", "54 cartes de coaching. PNL, psychologie positive et pensée critique en un seul jeu.")}
                 </p>
                 {lang === "fr" ? (
                   <div className="flex flex-wrap gap-2">
@@ -66,7 +66,7 @@ const Ressources = () => {
                       Version anglaise <ExternalLink size={14} />
                     </a>
                     <a href="https://www.amazon.fr/-/en/STRENGTHWISE-Photolanguage-Development-Emotional-Intelligence/dp/2959052692" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2">
-                      Version francaise <ExternalLink size={14} />
+                      Version française <ExternalLink size={14} />
                     </a>
                   </div>
                 ) : (

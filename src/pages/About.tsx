@@ -7,26 +7,26 @@ const About = () => {
   const { t } = useLang();
 
   const badges = [
-    "Trained in Positive Intelligence (Shirzad Chamine)",
-    "Trained in Flow Science (Steven Kotler, Flow Research Collective)",
-    "NLP Master Practitioner (ANLP, UK)",
-    "IIN Integrative Health Coach",
-    "EWOB Board Readiness Program",
-    "Bilingual French-English (British national)",
+    t("Trained in Positive Intelligence (Shirzad Chamine)", "Formation Positive Intelligence (Shirzad Chamine)"),
+    t("Trained in Flow Science (Steven Kotler, Flow Research Collective)", "Formation Flow Science (Steven Kotler, Flow Research Collective)"),
+    t("NLP Master Practitioner (ANLP, UK)", "Praticien PNL Master (ANLP, UK)"),
+    t("IIN Integrative Health Coach", "Health Coach Intégratif certifié IIN"),
+    t("EWOB Board Readiness Program", "Programme EWOB Board Readiness"),
+    t("Bilingual French-English (British national)", "Bilingue français-anglais (nationalité britannique)"),
   ];
 
   const blocks = [
     {
       en: "It was early in my finance career that I learned what it really means to navigate the unexpected. I was working in commercial aviation finance in 2001 when the twin towers collapsed. Within 24 hours, all war risk policies were cancelled. Airlines went down. The bank I worked for became the active owner of around a hundred aircraft worldwide. We had to negotiate, adapt, and find opportunities where there seemed to be none. That experience, and twenty years like it, taught me what pressure actually looks like, and what it takes to stay clear-headed inside it.",
-      fr: "C'est tot dans ma carriere en finance que j'ai appris ce que signifie vraiment naviguer dans l'imprevu. Je travaillais dans le financement de l'aviation commerciale en 2001 quand les tours se sont effondrees. En 24 heures, toutes les polices de risque de guerre ont ete annulees. Des compagnies aeriennes ont coule. La banque pour laquelle je travaillais est devenue proprietaire active d'une centaine d'avions dans le monde. Il a fallu negocier, s'adapter, trouver des leviers la ou il n'y en avait apparemment plus. Cette experience, et vingt ans dans sa lignee, m'a appris ce que la pression signifie vraiment, et ce qu'il faut pour garder la tete claire a l'interieur.",
+      fr: "C'est tôt dans ma carrière en finance que j'ai appris ce que signifie vraiment naviguer dans l'imprévu. Je travaillais dans le financement de l'aviation commerciale en 2001 quand les tours se sont effondrées. En 24 heures, toutes les polices de risque de guerre ont été annulées. Des compagnies aériennes ont coulé. La banque pour laquelle je travaillais est devenue propriétaire active d'une centaine d'avions dans le monde. Il a fallu négocier, s'adapter, trouver des leviers là où il n'y en avait apparemment plus. Cette expérience, et vingt ans dans sa lignée, m'a appris ce que la pression signifie vraiment, et ce qu'il faut pour garder la tête claire à l'intérieur.",
     },
     {
       en: "I've been through cycles, restructurings, multi-matrix reporting, competitive environments with limited resources and stretch deadlines. At some point, I paid the price of misalignment, and I had to rebuild my own clarity from scratch. That's what led me to coaching, to NLP, to positive psychology, to flow science. Not as a theory. As a necessity.",
-      fr: "J'ai traverse des cycles, des restructurations, des environnements ultra-competitifs avec peu de ressources et des deadlines impossibles. A un moment, j'ai paye le prix du desalignement, et j'ai du reconstruire ma propre clarte depuis le debut. C'est ce qui m'a conduite vers le coaching, la PNL, la psychologie positive, la science du flow. Pas comme une theorie. Comme une necessite.",
+      fr: "J'ai traversé des cycles, des restructurations, des environnements ultra-compétitifs avec peu de ressources et des deadlines impossibles. À un moment, j'ai payé le prix du désalignement, et j'ai dû reconstruire ma propre clarté depuis le début. C'est ce qui m'a conduite vers le coaching, la PNL, la psychologie positive, la science du flow. Pas comme une théorie. Comme une nécessité.",
     },
     {
       en: "Today, StrengthWise is built on one idea: performance doesn't have to come at the cost of the person. The right tools, the right mindset, the right framework, and you can perform at a high level while staying grounded, clear, and human. That's what I work on with my clients, one-to-one.",
-      fr: "Aujourd'hui, Strengthwise est construit sur une idee : la performance n'a pas a couter la personne. Les bons outils, le bon cadre, la bonne posture mentale, et il est possible de performer a un niveau eleve tout en restant ancre, lucide, et humain. C'est ce sur quoi je travaille avec mes clients, en tete-a-tete.",
+      fr: "Aujourd'hui, StrengthWise est construit sur une idée : la performance n'a pas à coûter la personne. Les bons outils, le bon cadre, la bonne posture mentale, et il est possible de performer à un niveau élevé tout en restant ancré, lucide, et humain. C'est ce sur quoi je travaille avec mes clients, en tête-à-tête.",
     },
   ];
 
@@ -40,7 +40,7 @@ const About = () => {
               <div className="flex justify-center md:justify-start">
                 <img
                   src="/images/raphaelle.png"
-                  alt="Raphaelle Hernu"
+                  alt="Raphaëlle Hernu"
                   className="w-[260px] md:w-[300px] h-auto rounded-2xl object-cover"
                 />
               </div>
@@ -50,7 +50,7 @@ const About = () => {
                 <p className="font-body text-foreground leading-relaxed mb-6">
                   {t(
                     "Twenty years in international finance, between Paris and London. I know what high-stakes environments feel like from the inside. Today, I help executives do the same work I had to do - without paying the same price.",
-                    "Vingt ans en finance internationale, entre Paris et Londres. J'ai vecu la pression des environnements a forts enjeux de l'interieur. Aujourd'hui, j'aide les dirigeants a faire ce chemin sans payer le meme prix."
+                    "Vingt ans en finance internationale, entre Paris et Londres. J'ai vécu la pression des environnements à forts enjeux de l'intérieur. Aujourd'hui, j'aide les dirigeants à faire ce chemin sans payer le même prix."
                   )}
                 </p>
                 <div className="flex flex-col gap-2">
