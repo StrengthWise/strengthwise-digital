@@ -36,7 +36,7 @@ const Privacy = () => {
           <p className="font-body text-foreground mb-8">
             {t(
               "Hello, I'm Raphaelle Hernu, founder of Strengthwise. I manage your data directly.",
-              "Bonjour, je suis Raphaëlle Hernu, fondatrice de StrengthWise. Je gère vos données directement."
+              "Bonjour, je suis Raphaelle Hernu, fondatrice de StrengthWise. Je gère tes données directement."
             )}
           </p>
         </ScrollFadeIn>

@@ -36,7 +36,7 @@ const Programme = () => {
   const testimonialsFr = [
     { quote: "Un soutien formidable pour retrouver mon intelligence positive quand les défis de la vie m'ont ébranlée. Son expérience et son professionnalisme font une vraie différence.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finlande" },
     { quote: "Sa capacité d'écoute remarquable a posé les bases d'une expérience de coaching vraiment personnalisée. Sa façon de mêler idées pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam L.", role: "Account Manager, UK" },
-    { quote: "Travailler avec Raphaëlle a été incroyablement enrichissant. Elle m'a aidée à construire de bonnes habitudes, à définir une vision stratégique pour mon activité et à la faire avancer sans m'épuiser.", name: "Katie L.", role: "Partner, ESG, UK" },
+    { quote: "Travailler avec Raphaelle a été incroyablement enrichissant. Elle m'a aidée à construire de bonnes habitudes, à définir une vision stratégique pour mon activité et à la faire avancer sans m'épuiser.", name: "Katie L.", role: "Partner, ESG, UK" },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;

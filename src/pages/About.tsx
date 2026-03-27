@@ -40,7 +40,7 @@ const About = () => {
               <div className="flex justify-center md:justify-start">
                 <img
                   src="/images/raphaelle.png"
-                  alt="Raphaëlle Hernu"
+                  alt="Raphaelle Hernu"
                   className="w-[260px] md:w-[300px] h-auto rounded-2xl object-cover"
                 />
               </div>

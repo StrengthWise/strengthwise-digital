@@ -17,8 +17,8 @@ const Home = () => {
 
   const testimonialsFr = [
     { quote: "Ces six mois ont été une vraie parenthèse dans mon quotidien managérial. J'en ressors plus forte. J'ai acquis la capacité de prendre du recul, mieux déléguer, et travailler la vision de mon management.", name: "Sophie M.", role: "Manager Commerciale, Arval BNP Paribas" },
-    { quote: "Raphaëlle sait avec beaucoup de talent et de délicatesse amener les participants à travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France" },
-    { quote: "Travailler avec Raphaëlle a été un vrai voyage, personnellement et professionnellement. Sa capacité à engager sur des sujets profonds rend chaque session précieuse.", name: "Maud P.", role: "Linguiste, UK" },
+    { quote: "Raphaelle sait avec beaucoup de talent et de délicatesse amener les participants à travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France" },
+    { quote: "Travailler avec Raphaelle a été un vrai voyage, personnellement et professionnellement. Sa capacité à engager sur des sujets profonds rend chaque session précieuse.", name: "Maud P.", role: "Linguiste, UK" },
   ];
 
   const testimonials = t("en", "fr") === "fr" ? testimonialsFr : testimonialsEn;
@@ -76,7 +76,7 @@ const Home = () => {
                 <Play size={24} className="text-white ml-1" />
               </div>
               <span className="text-white/80 text-sm font-body">
-                {t("Meet Raphaelle - 60 sec", "Rencontre Raphaëlle - 60 sec")}
+                {t("Meet Raphaelle - 60 sec", "Rencontre Raphaelle - 60 sec")}
               </span>
             </div>
           </ScrollFadeIn>
