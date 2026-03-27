@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import WaveTransition from "@/components/WaveTransition";
 
 const Privacy = () => {
   const { t } = useLang();
@@ -29,34 +30,57 @@ const Privacy = () => {
   const sections = t("en", "fr") === "fr" ? sectionsFr : sectionsEn;
 
   return (
-    <main className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
-      <div className="container max-w-3xl mx-auto px-4">
-        <ScrollFadeIn>
-          <h1 className="section-title mb-4">{t("PRIVACY POLICY", "POLITIQUE DE CONFIDENTIALITÉ")}</h1>
-          <p className="font-body text-foreground mb-8">
-            {t(
-              "Hello, I'm Raphaelle Hernu, founder of Strengthwise. I manage your data directly.",
-              "Bonjour, je suis Raphaelle Hernu, fondatrice de StrengthWise. Je gère tes données directement."
-            )}
-          </p>
-        </ScrollFadeIn>
-
-        {sections.map((s, i) => (
-          <ScrollFadeIn key={i}>
-            <div className="mb-6">
-              <h3 className="font-display font-bold text-sw-teal text-base mb-1">{s.title}</h3>
-              <p className="font-body text-foreground text-sm leading-relaxed">{s.text}</p>
-            </div>
+    <main>
+      {/* Hero */}
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container max-w-3xl mx-auto px-4 text-center">
+          <ScrollFadeIn>
+            <h1 className="section-title mb-4">{t("PRIVACY POLICY", "POLITIQUE DE CONFIDENTIALITÉ")}</h1>
+            <div
+              className="w-16 h-0.5 mx-auto mb-6"
+              style={{ background: "linear-gradient(90deg, #c5922f, #e8b45a)" }}
+            />
+            <p className="font-body text-muted-foreground">
+              {t(
+                "Hello, I'm Raphaelle Hernu, founder of Strengthwise. I manage your data directly.",
+                "Bonjour, je suis Raphaelle Hernu, fondatrice de StrengthWise. Je gère tes données directement."
+              )}
+            </p>
           </ScrollFadeIn>
-        ))}
+        </div>
+      </section>
 
-        <p className="font-body text-xs text-muted-foreground mt-8 italic">
+      <WaveTransition from="#ffffff" to="#faf9f7" />
+
+      {/* Sections */}
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
+        <div className="container max-w-3xl mx-auto px-4">
+          <div
+            className="rounded-2xl p-8 md:p-10"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "0 4px 24px -6px hsl(204 22% 28% / 0.06), 0 1px 8px -2px hsl(204 22% 28% / 0.03)",
+              border: "1px solid hsl(204 22% 28% / 0.06)",
+            }}
+          >
+            {sections.map((s, i) => (
+              <ScrollFadeIn key={i}>
+                <div className="mb-6 last:mb-0">
+                  <h3 className="font-display font-bold text-sw-teal text-base mb-1">{s.title}</h3>
+                  <p className="font-body text-foreground text-sm leading-relaxed">{s.text}</p>
+                </div>
+              </ScrollFadeIn>
+            ))}
+          </div>
+
+          <p className="font-body text-xs text-muted-foreground mt-8 italic text-center">
             {t(
               "We review this policy annually. Any changes will be shared on our website and directly with you by email.",
               "Nous révisons cette politique annuellement. Tout changement sera communiqué sur notre site web et directement par email."
             )}
-        </p>
-      </div>
+          </p>
+        </div>
+      </section>
     </main>
   );
 };

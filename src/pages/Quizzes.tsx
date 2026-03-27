@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import WaveTransition from "@/components/WaveTransition";
 import { Compass, Brain, ShieldAlert, BarChart3, Zap, Share2, Crown, HeartPulse, LucideIcon } from "lucide-react";
 
 interface Quiz {
@@ -28,28 +29,51 @@ const Quizzes = () => {
 
   return (
     <main>
+      {/* Hero intro */}
       <section className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container max-w-6xl mx-auto px-4">
+        <div className="container max-w-3xl mx-auto px-4 text-center">
           <ScrollFadeIn>
-            <h1 className="section-title text-center mb-4">{t("Where do you start?", "Par où commencer ?")}</h1>
-            <p className="font-body text-muted-foreground text-center max-w-3xl mx-auto mb-4">
+            <h1 className="section-title mb-4">{t("Where do you start?", "Par où commencer ?")}</h1>
+            <div
+              className="w-16 h-0.5 mx-auto mb-6"
+              style={{ background: "linear-gradient(90deg, #c5922f, #e8b45a)" }}
+            />
+            <p className="font-body text-muted-foreground max-w-3xl mx-auto mb-4">
               {t(
                 "Before we talk, take one of these assessments. They're not personality games. They're precision tools, built to give you a clear picture of where you are and what to work on first. Most of my clients start here. It takes 5 to 15 minutes per quiz. The results go straight to your inbox.",
                 "Ces outils ne sont pas que des tests de personnalité. Ce sont des outils de précision, conçus pour te donner une image claire de là où tu en es et de ce sur quoi travailler en premier. Chaque quiz prend entre 5 et 15 minutes par quiz. Les résultats arrivent directement dans ta boîte mail."
               )}
             </p>
-            <p className="text-center text-sm font-body text-muted-foreground mb-12 italic">
+            <p className="text-sm font-body text-muted-foreground italic">
               {t("More than 400 assessments completed to date.", "Plus de 400 évaluations complétées à ce jour.")}
             </p>
           </ScrollFadeIn>
+        </div>
+      </section>
 
+      <WaveTransition from="#ffffff" to="#faf9f7" />
+
+      {/* Quiz grid */}
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
+        <div className="container max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {quizzes.map((q, i) => {
               const Icon = q.icon;
               return (
                 <ScrollFadeIn key={i}>
-                  <div className="card-sw-gold flex flex-col h-full">
-                    <Icon className="text-primary mb-3" size={28} strokeWidth={1.8} />
+                  <div
+                    className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                    style={{
+                      border: "0.5px solid hsl(37 64% 48% / 0.25)",
+                      boxShadow: "0 4px 20px -6px hsl(37 60% 48% / 0.08), 0 1px 6px -2px hsl(204 22% 28% / 0.04)",
+                    }}
+                  >
+                    <div
+                      className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+                      style={{ backgroundColor: "hsl(37 71% 96%)" }}
+                    >
+                      <Icon className="text-sw-teal" size={20} strokeWidth={1.8} />
+                    </div>
                     <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">
                       {lang === "fr" && q.titleFr ? q.titleFr : q.title}
                     </h3>
@@ -69,14 +93,30 @@ const Quizzes = () => {
               );
             })}
           </div>
+        </div>
+      </section>
 
+      <WaveTransition from="#faf9f7" to="#ffffff" />
+
+      {/* Bottom note */}
+      <section className="py-12 md:py-16" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container max-w-2xl mx-auto px-4">
           <ScrollFadeIn>
-            <p className="font-body text-sm text-muted-foreground text-center mt-12 max-w-2xl mx-auto">
-              {t(
-                "All assessments are free. Results go straight to your inbox. No spam, ever. Once you've taken one or more, book a Clarity Call. I'll give you personalised recommendations based on your results.",
-                "Tous les quiz sont gratuits. Les résultats arrivent dans ta boîte mail. Sans spam. Une fois que tu en as fait un ou plusieurs, book un Clarity Call. Je te donne des recommandations personnalisées basées sur tes résultats."
-              )}
-            </p>
+            <div
+              className="rounded-2xl p-8 text-center"
+              style={{
+                backgroundColor: "hsl(37 71% 96%)",
+                boxShadow: "0 2px 12px -4px hsl(204 22% 28% / 0.05)",
+                border: "1px solid hsl(37 64% 48% / 0.1)",
+              }}
+            >
+              <p className="font-body text-sm text-muted-foreground">
+                {t(
+                  "All assessments are free. Results go straight to your inbox. No spam, ever. Once you've taken one or more, book a Clarity Call. I'll give you personalised recommendations based on your results.",
+                  "Tous les quiz sont gratuits. Les résultats arrivent dans ta boîte mail. Sans spam. Une fois que tu en as fait un ou plusieurs, book un Clarity Call. Je te donne des recommandations personnalisées basées sur tes résultats."
+                )}
+              </p>
+            </div>
           </ScrollFadeIn>
         </div>
       </section>

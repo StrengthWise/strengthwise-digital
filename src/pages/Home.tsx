@@ -74,9 +74,15 @@ const Home = () => {
             </a>
           </ScrollFadeIn>
 
-          {/* Video placeholder */}
+          {/* Video */}
           <ScrollFadeIn>
-            <div className="mx-auto max-w-[380px] rounded-xl overflow-hidden" style={{ backgroundColor: "#2e3f4a" }}>
+            <div
+              className="mx-auto max-w-[380px] rounded-xl overflow-hidden"
+              style={{
+                backgroundColor: "#2e3f4a",
+                boxShadow: "0 12px 40px -12px hsl(204 22% 28% / 0.2), 0 4px 16px -4px hsl(204 22% 28% / 0.08)",
+              }}
+            >
               <video
                 key={t("en", "fr")}
                 controls
@@ -97,7 +103,13 @@ const Home = () => {
         <div className="container max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center text-center">
           {pillars.map((p, i) => (
             <ScrollFadeIn key={i}>
-              <div className="text-center">
+              <div
+                className="text-center p-8 rounded-2xl transition-all duration-300"
+                style={{
+                  backgroundColor: "hsl(204 22% 32%)",
+                  boxShadow: "0 4px 24px -4px hsl(204 22% 15% / 0.3)",
+                }}
+              >
                 <div className="w-3 h-3 rounded-full mx-auto mb-4" style={{ backgroundColor: "#c5922f" }} />
                 <h3 className="font-display font-bold text-white uppercase tracking-[2px] text-lg mb-3">{p.title}</h3>
                 <p className="text-white/80 text-sm font-body leading-relaxed">{p.line1}</p>
@@ -111,8 +123,13 @@ const Home = () => {
       <WaveTransition from="#384c58" to="#fdf8f0" />
 
       {/* Testimonials */}
-      <section className="bg-sw-cream py-16 md:py-20">
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#fdf8f0" }}>
         <div className="container max-w-6xl mx-auto px-4">
+          <ScrollFadeIn>
+            <h2 className="section-title text-center mb-12">
+              {t("WHAT CLIENTS SAY", "CE QU'EN DISENT NOS CLIENTS")}
+            </h2>
+          </ScrollFadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <ScrollFadeIn key={i}>
