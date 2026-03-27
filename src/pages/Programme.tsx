@@ -6,6 +6,7 @@ import ScrollFadeIn from "@/components/ScrollFadeIn";
 import { Check, Minus } from "lucide-react";
 import loicImg from "@/assets/Loic.jpeg";
 import katieImg from "@/assets/katie.jpeg";
+import samImg from "@/assets/Sam.jpeg";
 
 const Programme = () => {
   const { lang, t } = useLang();
@@ -37,7 +38,7 @@ const Programme = () => {
 
   const testimonialsFr = [
     { quote: "Un soutien formidable pour retrouver mon intelligence positive quand les défis de la vie m'ont ébranlée. Son expérience et son professionnalisme font une vraie différence.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finlande" },
-    { quote: "Sa capacité d'écoute remarquable a posé les bases d'une expérience de coaching vraiment personnalisée. Sa façon de mêler idées pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam L.", role: "Account Manager, UK" },
+    { quote: "Sa capacité d'écoute remarquable a posé les bases d'une expérience de coaching vraiment personnalisée. Sa façon de mêler idées pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam E.", role: "Account Manager, UK", image: samImg },
     { quote: "Travailler avec Raphaelle a été incroyablement enrichissant. Elle m'a aidée à construire de bonnes habitudes, à définir une vision stratégique pour mon activité et à la faire avancer sans m'épuiser.", name: "Katie L.", role: "Partner, ESG, UK", image: katieImg },
     { quote: "8 mois à travailler ensemble sur des sujets variés et la capacité d'adapter l'accompagnement au fil des besoins a été un réel plaisir. Raphaelle est toujours disponible et prête à s'adapter.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France", image: loicImg },
   ];

@@ -8,6 +8,7 @@ import armelleImg from "@/assets/Armelle.jpeg";
 import jphilippeImg from "@/assets/JPhilippe.jpeg";
 import maudImg from "@/assets/Maud.jpeg";
 import katieImg from "@/assets/katie.jpeg";
+import samImg from "@/assets/Sam.jpeg";
 
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
 
   const testimonialsEn = [
     { quote: "Raphaelle has been of tremendous support to regain my positive intelligence when shaken by life's challenges. Her experience and professionalism make a real difference.", name: "Armelle L.", role: "Board Director, HR Consulting, Finland", image: armelleImg },
-    { quote: "Raphaelle's remarkable listening skills set the foundation for a truly personalised coaching experience. Her ability to blend great ideas and insightful perspectives makes each session uniquely transformative.", name: "Sam L.", role: "Account Manager, UK" },
+    { quote: "Raphaelle's remarkable listening skills set the foundation for a truly personalised coaching experience. Her ability to blend great ideas and insightful perspectives makes each session uniquely transformative.", name: "Sam E.", role: "Account Manager, UK", image: samImg },
     { quote: "Working with Raphaelle has been incredibly rewarding. She helped me build good habits, shape a strategic vision for my business, and navigate its challenges without burning out.", name: "Katie L.", role: "Partner, ESG, UK", image: katieImg },
   ];
 
