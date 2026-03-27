@@ -7,10 +7,10 @@ const About = () => {
   const { t } = useLang();
 
   const badges = [
-    t("Trained in Positive Intelligence (Shirzad Chamine)", "Formation Positive Intelligence (Shirzad Chamine)"),
-    t("Trained in Flow Science (Steven Kotler, Flow Research Collective)", "Formation Flow Science (Steven Kotler, Flow Research Collective)"),
-    t("NLP Master Practitioner (ANLP, UK)", "Praticien PNL Master (ANLP, UK)"),
-    t("IIN Integrative Health Coach", "Health Coach Intégratif certifié IIN"),
+    t("Trained in Positive Intelligence (Shirzad Chamine)", "Formée à la Positive Intelligence (Shirzad Chamine)"),
+    t("Trained in Flow Science (Steven Kotler, Flow Research Collective)", "Formée à la science du Flow (Steven Kotler, Flow Research Collective)"),
+    t("NLP Master Practitioner (ANLP, UK)", "Praticienne PNL Master (ANLP, UK)"),
+    t("IIN Integrative Health Coach", "Coach en santé intégrative (IIN)"),
     t("EWOB Board Readiness Program", "Programme EWOB Board Readiness"),
     t("Bilingual French-English (British national)", "Bilingue français-anglais (nationalité britannique)"),
   ];
@@ -55,7 +55,7 @@ const About = () => {
                 </p>
                 <div className="flex flex-col gap-2">
                   {badges.map((b, i) => (
-                    <span key={i} className="text-xs font-body px-3 py-1 rounded-full bg-sw-cream text-sw-teal border border-sw-teal/10 w-fit">
+                    <span key={i} className="block text-xs font-body px-3 py-1.5 rounded-full bg-sw-cream text-sw-teal border border-sw-teal/10">
                       {b}
                     </span>
                   ))}
