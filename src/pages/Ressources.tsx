@@ -33,6 +33,25 @@ const Ressources = () => {
       <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
         <div className="container max-w-5xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* 10-Day Performance Series */}
+            <ScrollFadeIn>
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
+                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("10-Day Performance Series", "10 Jours pour Booster ta Performance")}</h3>
+                <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
+                  {t("10 emails packed with targeted tips to excel sustainably while enjoying the journey.", "10 emails regorgeant de conseils ciblés pour exceller dans la durée tout en appréciant le voyage.")}
+                </p>
+                <a href={lang === "fr" ? "https://dashboard.mailerlite.com/forms/1312119/148014382708688033/share" : "https://dashboard.mailerlite.com/forms/1312119/145332500579747502/share"} target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
+                  {t("Sign up", "S'inscrire")} <ExternalLink size={14} />
+                </a>
+              </div>
+            </ScrollFadeIn>
+
             {/* Newsletter */}
             <ScrollFadeIn>
               <div
