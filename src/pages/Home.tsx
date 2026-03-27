@@ -10,22 +10,22 @@ const Home = () => {
   const { t } = useLang();
 
   const testimonialsEn = [
-    { quote: "Raphaelle has been of tremendous support to regain my positive intelligence when shaken by life's challenges. Her experience and professionalism make a real difference.", name: "Marie-Zoe B.", role: "Board Director, HR Consulting, Finland" },
+    { quote: "Raphaelle has been of tremendous support to regain my positive intelligence when shaken by life's challenges. Her experience and professionalism make a real difference.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finland" },
     { quote: "Raphaelle's remarkable listening skills set the foundation for a truly personalised coaching experience. Her ability to blend great ideas and insightful perspectives makes each session uniquely transformative.", name: "Sam L.", role: "Account Manager, UK" },
     { quote: "Working with Raphaelle has been incredibly rewarding. She helped me build good habits, shape a strategic vision for my business, and navigate its challenges without burning out.", name: "Katie L.", role: "Partner, ESG, UK" },
   ];
 
   const testimonialsFr = [
-    { quote: "Ces six mois ont ete une vraie parenthese dans mon quotidien managerial. J'en ressors plus forte. J'ai acquis la capacite de prendre du recul, mieux deleguer, et travailler la vision de mon management.", name: "Sophie M.", role: "Manager Commerciale, Arval BNP Paribas" },
-    { quote: "Raphaelle sait avec beaucoup de talent et de delicatesse amener les participants a travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France" },
-    { quote: "Travailler avec Raphaelle a ete un vrai voyage, personnellement et professionnellement. Sa capacite a engager sur des sujets profonds rend chaque session precieuse.", name: "Maud P.", role: "Linguiste, UK" },
+    { quote: "Ces six mois ont été une vraie parenthèse dans mon quotidien managérial. J'en ressors plus forte. J'ai acquis la capacité de prendre du recul, mieux déléguer, et travailler la vision de mon management.", name: "Sophie M.", role: "Manager Commerciale, Arval BNP Paribas" },
+    { quote: "Raphaëlle sait avec beaucoup de talent et de délicatesse amener les participants à travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France" },
+    { quote: "Travailler avec Raphaëlle a été un vrai voyage, personnellement et professionnellement. Sa capacité à engager sur des sujets profonds rend chaque session précieuse.", name: "Maud P.", role: "Linguiste, UK" },
   ];
 
   const testimonials = t("en", "fr") === "fr" ? testimonialsFr : testimonialsEn;
 
   const pillars = [
     {
-      title: t("CLARITY", "CLARTE"),
+      title: t("CLARITY", "CLARTÉ"),
       line1: t("Cut through the noise", "Reprendre la main sur ce qui compte"),
       line2: t("Focus on what matters", "Voir clairement ce qui importe"),
     },
@@ -36,7 +36,7 @@ const Home = () => {
     },
     {
       title: t("PRACTICAL TOOLS", "OUTILS CONCRETS"),
-      line1: t("Methods you use from day one", "Des outils applicables des la premiere session"),
+      line1: t("Methods you use from day one", "Des outils applicables dès la première session"),
       line2: "",
     },
   ];
@@ -55,13 +55,13 @@ const Home = () => {
                 {t("MORE IMPACT", "PLUS D'IMPACT")}
               </h1>
               <p className="font-display font-bold uppercase tracking-[8px] md:tracking-[12px] text-lg md:text-xl mt-2" style={{ color: "#c5922f" }}>
-                {t("A BETTER WAY TO LEAD", "UNE MEILLEURE FACON DE DIRIGER")}
+                {t("A BETTER WAY TO LEAD", "UNE MEILLEURE FAÇON DE DIRIGER")}
               </p>
             </div>
             <p className="font-body text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
               {t(
                 "Coaching for leaders who perform under pressure and want to keep it that way - without burning out.",
-                "Coaching executif pour dirigeants et managers sous pression qui veulent rester au top sans se perdre."
+                "Coaching exécutif pour dirigeants et managers sous pression qui veulent rester au top sans se perdre."
               )}
             </p>
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold mb-12 inline-flex">
@@ -76,7 +76,7 @@ const Home = () => {
                 <Play size={24} className="text-white ml-1" />
               </div>
               <span className="text-white/80 text-sm font-body">
-                {t("Meet Raphaelle - 60 sec", "Rencontre Raphaelle - 60 sec")}
+                {t("Meet Raphaelle - 60 sec", "Rencontre Raphaëlle - 60 sec")}
               </span>
             </div>
           </ScrollFadeIn>
@@ -122,7 +122,7 @@ const Home = () => {
 
       <CTASection
         titleEn="Ready to lead differently?"
-        titleFr="Pret(e) a reprendre la main ?"
+        titleFr="Prêt(e) à reprendre la main ?"
         subtitleEn="Book your free 30-min Clarity Call. No pitch. Just an honest conversation."
         subtitleFr="Book un Clarity Call gratuit de 30 minutes. Sans engagement. Une vraie conversation."
         variant="teal"

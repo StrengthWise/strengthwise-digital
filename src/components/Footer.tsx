@@ -16,7 +16,7 @@ const Footer = () => {
             <h4 className="font-display font-bold text-sm mb-3 uppercase tracking-wider">{t("Navigate", "Navigation")}</h4>
             <div className="space-y-2 text-sm font-body">
               <Link to="/" className="block hover:text-white transition-colors">{t("Home", "Accueil")}</Link>
-              <Link to="/about" className="block hover:text-white transition-colors">{t("About", "A propos")}</Link>
+              <Link to="/about" className="block hover:text-white transition-colors">{t("About", "À propos")}</Link>
               <Link to="/quizzes" className="block hover:text-white transition-colors">Quizzes</Link>
               <Link to="/programme" className="block hover:text-white transition-colors">Programme</Link>
               <Link to="/ressources" className="block hover:text-white transition-colors">{t("Resources", "Ressources")}</Link>
@@ -25,15 +25,15 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-sm mb-3 uppercase tracking-wider">{t("Legal", "Mentions")}</h4>
             <div className="space-y-2 text-sm font-body">
-              <Link to="/privacy" className="block hover:text-white transition-colors">{t("Privacy Policy", "Politique de confidentialite")}</Link>
-              <Link to="/terms" className="block hover:text-white transition-colors">{t("Terms and Conditions", "Conditions generales")}</Link>
-              <Link to="/ethics" className="block hover:text-white transition-colors">{t("Code of Ethics", "Code d'ethique")}</Link>
+              <Link to="/privacy" className="block hover:text-white transition-colors">{t("Privacy Policy", "Politique de confidentialité")}</Link>
+              <Link to="/terms" className="block hover:text-white transition-colors">{t("Terms and Conditions", "Conditions générales")}</Link>
+              <Link to="/ethics" className="block hover:text-white transition-colors">{t("Code of Ethics", "Code de déontologie")}</Link>
             </div>
           </div>
           <div>
             <h4 className="font-display font-bold text-sm mb-3 uppercase tracking-wider">{t("Connect", "Suivez-nous")}</h4>
             <div className="space-y-2 text-sm font-body">
-              <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (Raphaelle)</a>
+              <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (Raphaëlle)</a>
               <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (StrengthWise)</a>
               <a href="#" className="block hover:text-white transition-colors">Instagram</a>
               <a href="#" className="block hover:text-white transition-colors">Facebook</a>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-white/20 pt-6 text-center text-xs text-white/50 font-body">
-          &copy; 2026 StrengthWise. {t("All rights reserved.", "Tous droits reserves.")}
+          &copy; 2026 StrengthWise. {t("All rights reserved.", "Tous droits réservés.")}
         </div>
       </div>
     </footer>

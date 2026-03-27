@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const links = [
     { path: "/", label: t("Home", "Accueil") },
-    { path: "/about", label: t("About", "A propos") },
+    { path: "/about", label: t("About", "À propos") },
     { path: "/quizzes", label: "Quizzes" },
     { path: "/programme", label: "Programme" },
     { path: "/ressources", label: t("Resources", "Ressources") },

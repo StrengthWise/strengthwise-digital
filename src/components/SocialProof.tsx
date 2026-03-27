@@ -6,7 +6,7 @@ const SocialProof = () => {
   const metrics = [
     { value: "9", label: t("years of practice", "ans de pratique") },
     { value: "200+", label: t("clients", "clients") },
-    { value: "400+", label: t("assessments", "evaluations") },
+    { value: "400+", label: t("assessments", "évaluations") },
     { value: "3", label: t("publications", "publications") },
   ];
 
