@@ -4,6 +4,7 @@ import SocialProof from "@/components/SocialProof";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import armelleImg from "@/assets/Armelle.jpeg";
 
 
 const Home = () => {
