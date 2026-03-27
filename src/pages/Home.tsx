@@ -4,19 +4,20 @@ import SocialProof from "@/components/SocialProof";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import armelleImg from "@/assets/Armelle.jpeg";
 
 
 const Home = () => {
   const { t } = useLang();
 
   const testimonialsEn = [
-    { quote: "Raphaelle has been of tremendous support to regain my positive intelligence when shaken by life's challenges. Her experience and professionalism make a real difference.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finland" },
+    { quote: "Raphaelle has been of tremendous support to regain my positive intelligence when shaken by life's challenges. Her experience and professionalism make a real difference.", name: "Armelle L.", role: "Board Director, HR Consulting, Finland", image: armelleImg },
     { quote: "Raphaelle's remarkable listening skills set the foundation for a truly personalised coaching experience. Her ability to blend great ideas and insightful perspectives makes each session uniquely transformative.", name: "Sam L.", role: "Account Manager, UK" },
     { quote: "Working with Raphaelle has been incredibly rewarding. She helped me build good habits, shape a strategic vision for my business, and navigate its challenges without burning out.", name: "Katie L.", role: "Partner, ESG, UK" },
   ];
 
   const testimonialsFr = [
-    { quote: "Ces six mois ont été une vraie parenthèse dans mon quotidien managérial. J'en ressors plus forte. J'ai acquis la capacité de prendre du recul, mieux déléguer, et travailler la vision de mon management.", name: "Sophie M.", role: "Manager Commerciale, Arval BNP Paribas" },
+    { quote: "Ces six mois ont été une vraie parenthèse dans mon quotidien managérial. J'en ressors plus forte. J'ai acquis la capacité de prendre du recul, mieux déléguer, et travailler la vision de mon management.", name: "Armelle L.", role: "Manager Commerciale, Arval BNP Paribas", image: armelleImg },
     { quote: "Raphaelle sait avec beaucoup de talent et de délicatesse amener les participants à travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France" },
     { quote: "Travailler avec Raphaelle a été un vrai voyage, personnellement et professionnellement. Sa capacité à engager sur des sujets profonds rend chaque session précieuse.", name: "Maud P.", role: "Linguiste, UK" },
   ];
@@ -111,7 +112,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <ScrollFadeIn key={i}>
-                <TestimonialCard quote={t.quote} name={t.name} role={t.role} />
+                <TestimonialCard quote={t.quote} name={t.name} role={t.role} image={(t as any).image} />
               </ScrollFadeIn>
             ))}
           </div>
