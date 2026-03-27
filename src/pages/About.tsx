@@ -53,9 +53,9 @@ const About = () => {
                     "Vingt ans en finance internationale, entre Paris et Londres. J'ai vecu la pression des environnements a forts enjeux de l'interieur. Aujourd'hui, j'aide les dirigeants a faire ce chemin sans payer le meme prix."
                   )}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-col gap-2">
                   {badges.map((b, i) => (
-                    <span key={i} className="text-xs font-body px-3 py-1 rounded-full bg-sw-cream text-sw-teal border border-sw-teal/10">
+                    <span key={i} className="text-xs font-body px-3 py-1 rounded-full bg-sw-cream text-sw-teal border border-sw-teal/10 w-fit">
                       {b}
                     </span>
                   ))}
