@@ -252,11 +252,13 @@ const Programme = () => {
           <ScrollFadeIn>
             <h2 className="section-title text-center mb-12">{t("What they say", "Ce qu'ils en disent")}</h2>
           </ScrollFadeIn>
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
             {testimonials.map((t, i) => (
-              <ScrollFadeIn key={i}>
-                <TestimonialCard quote={t.quote} name={t.name} role={t.role} image={(t as any).image} />
-              </ScrollFadeIn>
+              <div key={i} className="mb-6 break-inside-avoid">
+                <ScrollFadeIn>
+                  <TestimonialCard quote={t.quote} name={t.name} role={t.role} image={(t as any).image} />
+                </ScrollFadeIn>
+              </div>
             ))}
           </div>
         </div>
