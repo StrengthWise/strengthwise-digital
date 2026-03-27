@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (Raphaelle)</a>
               <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (StrengthWise)</a>
               <a href="https://www.instagram.com/strengthwiseco/" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="block hover:text-white transition-colors">Facebook</a>
+              
             </div>
             <button
               onClick={() => setLang(lang === "en" ? "fr" : "en")}
