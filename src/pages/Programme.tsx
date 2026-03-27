@@ -3,7 +3,7 @@ import WaveTransition from "@/components/WaveTransition";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
-import { Check, Minus } from "lucide-react";
+import { Check, Minus, Sparkles } from "lucide-react";
 import loicImg from "@/assets/Loic.jpeg";
 import katieImg from "@/assets/katie.jpeg";
 import samImg from "@/assets/Sam.jpeg";
@@ -51,12 +51,17 @@ const Programme = () => {
 
   return (
     <main>
-      {/* Hero */}
-      <section className="py-16 md:py-24 text-center" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container max-w-4xl mx-auto px-4">
+      {/* Hero — white with subtle bottom vignette */}
+      <section className="py-20 md:py-28 text-center relative" style={{ backgroundColor: "#ffffff" }}>
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at 50% 100%, hsl(37 71% 96% / 0.5) 0%, transparent 70%)" }} />
+        <div className="container max-w-4xl mx-auto px-4 relative z-10">
           <ScrollFadeIn>
-            <h1 className="section-title mb-4">FROM PRESSURE TO CLARITY</h1>
-            <p className="font-body text-muted-foreground text-lg mb-8">
+            <p className="font-body text-sm uppercase tracking-[4px] text-muted-foreground mb-4">
+              {t("Precision coaching programme", "Programme de coaching haute précision")}
+            </p>
+            <h1 className="section-title mb-6 text-3xl md:text-4xl">FROM PRESSURE TO CLARITY</h1>
+            <div className="w-12 h-[2px] mx-auto mb-6" style={{ background: "linear-gradient(90deg, hsl(37 64% 48%), hsl(37 68% 63%))" }} />
+            <p className="font-body text-muted-foreground text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
               {t("90-day precision mental fitness for leaders under pressure.", "90 jours de mental fitness haute précision pour dirigeants et managers sous pression.")}
             </p>
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold">
@@ -70,14 +75,16 @@ const Programme = () => {
 
       {/* Problem */}
       <section className="bg-sw-cream py-16 md:py-20">
-        <div className="container max-w-3xl mx-auto px-4 text-center">
+        <div className="container max-w-2xl mx-auto px-4 text-center">
           <ScrollFadeIn>
-            <p className="font-body text-foreground text-lg leading-relaxed">
-              {t(
-                "You're performing. But you're running on willpower. The mental load keeps building, decisions pile up, and clarity fades. You know this can't go on.",
-                "Tu performes. Mais tu tiens à la force du poignet. La charge mentale monte, les arbitrages s'accumulent, la clarté recule. Tu sais que ça ne peut pas durer comme ça."
-              )}
-            </p>
+            <div className="bg-card rounded-2xl px-8 py-10 md:px-12 md:py-12" style={{ boxShadow: "0 4px 30px -8px hsl(204 22% 28% / 0.06)" }}>
+              <p className="font-body text-foreground text-lg leading-relaxed">
+                {t(
+                  "You're performing. But you're running on willpower. The mental load keeps building, decisions pile up, and clarity fades. You know this can't go on.",
+                  "Tu performes. Mais tu tiens à la force du poignet. La charge mentale monte, les arbitrages s'accumulent, la clarté recule. Tu sais que ça ne peut pas durer comme ça."
+                )}
+              </p>
+            </div>
           </ScrollFadeIn>
         </div>
       </section>
@@ -86,14 +93,16 @@ const Programme = () => {
 
       {/* Promise */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container max-w-3xl mx-auto px-4 text-center">
+        <div className="container max-w-2xl mx-auto px-4 text-center">
           <ScrollFadeIn>
-            <p className="font-body text-foreground text-lg leading-relaxed">
-              {t(
-                "We don't eliminate pressure. We change the way your mind and leadership respond to it. That's precision mental fitness.",
-                "On ne supprime pas la pression. On change la façon dont ton mental et ton leadership y répondent. C'est ça, le mental fitness haute précision."
-              )}
-            </p>
+            <div className="bg-card rounded-2xl px-8 py-10 md:px-12 md:py-12" style={{ boxShadow: "0 4px 30px -8px hsl(37 60% 48% / 0.08)" }}>
+              <p className="font-body text-foreground text-lg leading-relaxed font-medium">
+                {t(
+                  "We don't eliminate pressure. We change the way your mind and leadership respond to it. That's precision mental fitness.",
+                  "On ne supprime pas la pression. On change la façon dont ton mental et ton leadership y répondent. C'est ça, le mental fitness haute précision."
+                )}
+              </p>
+            </div>
           </ScrollFadeIn>
         </div>
       </section>
@@ -104,46 +113,81 @@ const Programme = () => {
       <section className="bg-sw-cream py-16 md:py-20">
         <div className="container max-w-3xl mx-auto px-4">
           <ScrollFadeIn>
-            <h2 className="section-title text-center mb-8">{t("This programme is for you if...", "Ce programme est pour toi si...")}</h2>
-            <ul className="space-y-3">
-              {forYouItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 font-body text-foreground">
-                  <Check size={18} className="text-sw-teal mt-0.5 flex-shrink-0" />
-                  {t(item.en, item.fr)}
-                </li>
-              ))}
-            </ul>
+            <h2 className="section-title text-center mb-10">{t("This programme is for you if...", "Ce programme est pour toi si...")}</h2>
+            <div className="bg-card rounded-2xl p-8 md:p-10" style={{ boxShadow: "0 4px 30px -8px hsl(204 22% 28% / 0.06)" }}>
+              <ul className="space-y-4">
+                {forYouItems.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 font-body text-foreground">
+                    <Check size={18} className="text-sw-teal mt-0.5 flex-shrink-0" />
+                    {t(item.en, item.fr)}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </ScrollFadeIn>
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "#ffffff" }}>
+      {/* Pricing — slightly warm off-white for contrast */}
+      <section className="py-20 md:py-24" style={{ backgroundColor: "#faf9f7" }}>
         <div className="container max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ScrollFadeIn>
+            <h2 className="section-title text-center mb-4">{t("Choose your path", "Choisis ta formule")}</h2>
+            <p className="text-center text-muted-foreground font-body mb-12 max-w-lg mx-auto">
+              {t("Two formats, same rigour. Pick the level of support that fits your needs.", "Deux formats, même rigueur. Choisis le niveau d'accompagnement qui te correspond.")}
+            </p>
+          </ScrollFadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             {/* Standard */}
             <ScrollFadeIn>
-              <div className="card-sw text-center">
+              <div
+                className="bg-card rounded-2xl p-8 md:p-10 text-center transition-all duration-300"
+                style={{
+                  border: "1px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 2px 20px -6px hsl(204 22% 28% / 0.06)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-xl mb-2">STANDARD</h3>
                 <div className="text-3xl font-display font-bold text-sw-teal mb-1">2 000 EUR</div>
-                <p className="text-xs text-muted-foreground font-body mb-6">3x 667 EUR/{t("month", "mois")}</p>
+                <p className="text-xs text-muted-foreground font-body mb-8">3x 667 EUR/{t("month", "mois")}</p>
                 <div className="space-y-3 text-left">
                   {features.map((f, i) => (
                     <div key={i} className="flex items-center gap-3 text-sm font-body">
-                      {f.standard ? <Check size={16} className="text-sw-teal flex-shrink-0" /> : <Minus size={16} className="text-muted-foreground/40 flex-shrink-0" />}
-                      <span className={f.standard ? "text-foreground" : "text-muted-foreground/40"}>{f.label}</span>
+                      {f.standard ? <Check size={16} className="text-sw-teal flex-shrink-0" /> : <Minus size={16} className="text-muted-foreground/30 flex-shrink-0" />}
+                      <span className={f.standard ? "text-foreground" : "text-muted-foreground/30"}>{f.label}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </ScrollFadeIn>
 
-            {/* Augmented */}
+            {/* Augmented — elevated */}
             <ScrollFadeIn>
-              <div className="card-sw-gold text-center relative">
-                <h3 className="font-display font-bold uppercase tracking-[2px] text-xl mb-2" style={{ color: "#c5922f" }}>AUGMENTED</h3>
+              <div
+                className="bg-card rounded-2xl p-8 md:p-10 text-center relative transition-all duration-300"
+                style={{
+                  border: "1.5px solid hsl(37 64% 48% / 0.35)",
+                  boxShadow: "0 8px 40px -8px hsl(37 60% 48% / 0.12), 0 2px 12px -4px hsl(37 60% 48% / 0.06)",
+                }}
+              >
+                {/* Recommended badge */}
+                <div
+                  className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-display font-bold uppercase tracking-wider text-primary-foreground flex items-center gap-1.5"
+                  style={{ background: "linear-gradient(135deg, hsl(37 64% 48%), hsl(37 68% 58%))" }}
+                >
+                  <Sparkles size={12} />
+                  {t("Recommended", "Recommandé")}
+                </div>
+
+                <h3
+                  className="font-display font-bold uppercase tracking-[2px] text-xl mb-2 mt-2"
+                  style={{ color: "hsl(37 64% 42%)" }}
+                >
+                  AUGMENTED
+                </h3>
                 <div className="text-3xl font-display font-bold text-sw-teal mb-1">3 500 EUR</div>
-                <p className="text-xs text-muted-foreground font-body mb-6">3x 1 167 EUR/{t("month", "mois")}</p>
+                <p className="text-xs text-muted-foreground font-body mb-8">3x 1 167 EUR/{t("month", "mois")}</p>
                 <div className="space-y-3 text-left">
                   {features.map((f, i) => (
                     <div key={i} className="flex items-center gap-3 text-sm font-body">
@@ -157,7 +201,7 @@ const Programme = () => {
           </div>
 
           <ScrollFadeIn>
-            <p className="text-center text-sm text-muted-foreground font-body italic mt-8">
+            <p className="text-center text-sm text-muted-foreground font-body italic mt-10">
               {t(
                 "Limited availability. I work with a small number of clients at a time to guarantee quality.",
                 "Places limitées. J'accompagne un nombre restreint de personnes à la fois pour garantir la qualité."
@@ -167,11 +211,14 @@ const Programme = () => {
         </div>
       </section>
 
-      <WaveTransition from="#ffffff" to="#fdf8f0" />
+      <WaveTransition from="#faf9f7" to="#fdf8f0" />
 
       {/* Testimonials */}
       <section className="bg-sw-cream py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4">
+          <ScrollFadeIn>
+            <h2 className="section-title text-center mb-12">{t("What they say", "Ce qu'ils en disent")}</h2>
+          </ScrollFadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <ScrollFadeIn key={i}>
