@@ -18,16 +18,16 @@ const Terms = () => {
   ];
 
   const sectionsFr = [
-    { title: "1. Votre bien-être compte", text: "Vous êtes responsable de votre bien-être physique, mental et émotionnel pendant nos sessions. Vous pouvez interrompre nos services à tout moment." },
-    { title: "2. Qu'est-ce que le coaching", text: "Le coaching est un processus collaboratif pour vous aider à créer et atteindre vos objectifs personnels, professionnels ou d'entreprise." },
+    { title: "1. Ton bien-être compte", text: "Tu es responsable de ton bien-être physique, mental et émotionnel pendant nos sessions. Tu peux interrompre nos services à tout moment." },
+    { title: "2. Qu'est-ce que le coaching", text: "Le coaching est un processus collaboratif pour t'aider à créer et atteindre tes objectifs personnels, professionnels ou d'entreprise." },
     { title: "3. Qu'est-ce que le conseil", text: "Le conseil couvre le leadership, la stratégie, le marketing, la planification financière, les ressources humaines et la dynamique d'équipe. Les sessions peuvent inclure du brainstorming, du développement stratégique et des recommandations actionnables." },
-    { title: "4. Confidentialité", text: "Vos informations sont tenues confidentielles sauf obligation légale ou accord écrit contraire." },
-    { title: "5. Accompagnement professionnel", text: "Le coaching et le conseil ne remplacent pas un avis juridique, médical, financier ou tout autre avis professionnel. Les décisions vous appartiennent." },
+    { title: "4. Confidentialité", text: "Tes informations sont tenues confidentielles sauf obligation légale ou accord écrit contraire." },
+    { title: "5. Accompagnement professionnel", text: "Le coaching et le conseil ne remplacent pas un avis juridique, médical, financier ou tout autre avis professionnel. Les décisions t'appartiennent." },
     { title: "6. Honoraires et services", text: "Les honoraires sont payés à l'avance sauf indication contraire. Tout report nécessite un préavis de 24 heures." },
-    { title: "7. Approche collaborative", text: "Un coaching réussi nécessite votre participation active. Si le processus ne fonctionne pas comme souhaité, communiquez ouvertement." },
-    { title: "8. Antécédents et santé mentale", text: "Veuillez signaler tout traitement psychologique ou psychiatrique passé ou en cours. En cas de difficultés de santé mentale, nous en discuterons et vous orienterons si nécessaire." },
+    { title: "7. Approche collaborative", text: "Un coaching réussi nécessite ta participation active. Si le processus ne fonctionne pas comme souhaité, communique ouvertement." },
+    { title: "8. Antécédents et santé mentale", text: "Merci de signaler tout traitement psychologique ou psychiatrique passé ou en cours. En cas de difficultés de santé mentale, nous en discuterons et t'orienterons si nécessaire." },
     { title: "9. Résiliation et report", text: "Le coaching se poursuit pendant la durée contractée. La résiliation peut intervenir dans des circonstances exceptionnelles, avec un report possible jusqu'à six mois." },
-    { title: "10. Votre acceptation", text: "Le paiement vaut acceptation pleine et entière de ces conditions, de notre Code de déontologie et de notre Politique de confidentialité." },
+    { title: "10. Ton acceptation", text: "Le paiement vaut acceptation pleine et entière de ces conditions, de notre Code d'éthique et de notre Politique de confidentialité." },
   ];
 
   const sections = t("en", "fr") === "fr" ? sectionsFr : sectionsEn;
@@ -43,7 +43,7 @@ const Terms = () => {
           <p className="font-body text-muted-foreground mb-8">
             {t(
               "Welcome to our coaching and consulting services. Before we begin, please read and understand the terms below.",
-              "Bienvenue dans nos services de coaching et de conseil. Avant de commencer, veuillez lire et comprendre les conditions ci-dessous."
+              "Bienvenue dans nos services de coaching et de conseil. Avant de commencer, merci de lire et comprendre les conditions ci-dessous."
             )}
           </p>
         </ScrollFadeIn>

@@ -16,14 +16,14 @@ const Privacy = () => {
   ];
 
   const sectionsFr = [
-    { title: "Ce que nous collectons", text: "Nous collectons votre nom, vos coordonnées et toute information que vous fournissez via nos formulaires et évaluations en ligne. Cela nous permet de personnaliser votre expérience et de communiquer efficacement." },
-    { title: "Comment nous les utilisons", text: "Vos données sont utilisées uniquement pour fournir nos services de coaching et de conseil, envoyer des communications pertinentes et améliorer nos offres." },
-    { title: "Outils d'intelligence artificielle", text: "Dans le cadre de notre travail, nous pouvons utiliser des outils assistés par l'IA, tels que des assistants basés sur GPT, pour soutenir la préparation des sessions, la prise de notes ou la création de contenu. Lorsque cela se produit, nous veillons à ne pas saisir d'informations personnellement identifiables sans votre connaissance. Vous pouvez demander à tout moment que vos données ne soient pas utilisées en lien avec un outil d'IA en écrivant à info@strengthwise.co." },
-    { title: "Comment nous les stockons", text: "Vos données sont stockées sur Typeform (basé dans l'UE, conforme au RGPD) et Airtable (basé aux États-Unis, protégé par les Clauses Contractuelles Types pour les transferts internationaux de données). Les deux plateformes utilisent le chiffrement, des restrictions d'accès et l'authentification à deux facteurs." },
-    { title: "Newsletter et communications", text: "Si vous vous abonnez à notre newsletter, votre email est géré via notre plateforme de messagerie actuelle. Vous pouvez vous désabonner à tout moment en utilisant le lien présent dans chaque email." },
-    { title: "Durée de conservation", text: "Nous conservons vos données tant que notre relation de coaching est active. En l'absence de contact pendant 12 mois, vos données sont signalées pour suppression lors de notre revue annuelle. Les données sont conservées au maximum deux ans après notre dernière interaction. Vous pouvez demander la suppression à tout moment." },
-    { title: "Cookies", text: "Ce site web peut utiliser des cookies pour les fonctionnalités de base et des analyses anonymes. Vous pouvez refuser les cookies non essentiels à tout moment via les paramètres de votre navigateur ou notre bannière de cookies." },
-    { title: "Vos droits", text: "Vous pouvez demander à consulter, corriger ou supprimer vos données à tout moment. Email : info@strengthwise.co" },
+    { title: "Ce que nous collectons", text: "Nous collectons ton nom, tes coordonnées et toute information que tu fournis via nos formulaires et évaluations en ligne. Cela nous permet de personnaliser ton expérience et de communiquer efficacement." },
+    { title: "Comment nous les utilisons", text: "Tes données sont utilisées uniquement pour fournir nos services de coaching et de conseil, envoyer des communications pertinentes et améliorer nos offres." },
+    { title: "Outils d'intelligence artificielle", text: "Dans le cadre de notre travail, nous pouvons utiliser des outils assistés par l'IA, tels que des assistants basés sur GPT, pour soutenir la préparation des sessions, la prise de notes ou la création de contenu. Lorsque cela se produit, nous veillons à ne pas saisir d'informations personnellement identifiables sans que tu en sois informé(e). Tu peux demander à tout moment que tes données ne soient pas utilisées en lien avec un outil d'IA en écrivant à info@strengthwise.co." },
+    { title: "Comment nous les stockons", text: "Tes données sont stockées sur Typeform (basé dans l'UE, conforme au RGPD) et Airtable (basé aux États-Unis, protégé par les Clauses Contractuelles Types pour les transferts internationaux de données). Les deux plateformes utilisent le chiffrement, des restrictions d'accès et l'authentification à deux facteurs." },
+    { title: "Newsletter et communications", text: "Si tu t'abonnes à notre newsletter, ton email est géré via notre plateforme de messagerie actuelle. Tu peux te désabonner à tout moment en utilisant le lien présent dans chaque email." },
+    { title: "Durée de conservation", text: "Nous conservons tes données tant que notre relation de coaching est active. En l'absence de contact pendant 12 mois, tes données sont signalées pour suppression lors de notre revue annuelle. Les données sont conservées au maximum deux ans après notre dernière interaction. Tu peux demander la suppression à tout moment." },
+    { title: "Cookies", text: "Ce site web peut utiliser des cookies pour les fonctionnalités de base et des analyses anonymes. Tu peux refuser les cookies non essentiels à tout moment via les paramètres de ton navigateur ou notre bannière de cookies." },
+    { title: "Tes droits", text: "Tu peux demander à consulter, corriger ou supprimer tes données à tout moment. Email : info@strengthwise.co" },
   ];
 
   const sections = t("en", "fr") === "fr" ? sectionsFr : sectionsEn;
@@ -51,10 +51,10 @@ const Privacy = () => {
         ))}
 
         <p className="font-body text-xs text-muted-foreground mt-8 italic">
-          {t(
-            "We review this policy annually. Any changes will be shared on our website and directly with you by email.",
-            "Nous révisons cette politique annuellement. Tout changement sera communiqué sur notre site web et directement par email."
-          )}
+            {t(
+              "We review this policy annually. Any changes will be shared on our website and directly with you by email.",
+              "Nous révisons cette politique annuellement. Tout changement sera communiqué sur notre site web et directement par email."
+            )}
         </p>
       </div>
     </main>
