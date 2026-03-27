@@ -37,13 +37,13 @@ const Navbar = () => {
             </Link>
           ))}
           <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-5">
-            {t("Book a Clarity Call", "Reserver un Clarity Call")}
+            {t("Book a Clarity Call", "Book un Clarity Call")}
           </a>
           <button
             onClick={() => setLang(lang === "en" ? "fr" : "en")}
-            className="text-white/80 hover:text-white text-sm font-body border border-white/30 rounded px-2 py-1 transition-colors"
+            className="text-xl leading-none hover:opacity-80 transition-opacity px-1 py-1"
           >
-            {lang === "en" ? "FR" : "EN"}
+            {lang === "en" ? "🇫🇷" : "🇬🇧"}
           </button>
         </div>
 
@@ -67,13 +67,13 @@ const Navbar = () => {
             </Link>
           ))}
           <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-5 block text-center">
-            {t("Book a Clarity Call", "Reserver un Clarity Call")}
+            {t("Book a Clarity Call", "Book un Clarity Call")}
           </a>
           <button
             onClick={() => { setLang(lang === "en" ? "fr" : "en"); setOpen(false); }}
-            className="text-white/80 text-sm font-body border border-white/30 rounded px-2 py-1"
+            className="text-xl leading-none hover:opacity-80 transition-opacity px-1 py-1"
           >
-            {lang === "en" ? "FR" : "EN"}
+            {lang === "en" ? "🇫🇷" : "🇬🇧"}
           </button>
         </div>
       )}

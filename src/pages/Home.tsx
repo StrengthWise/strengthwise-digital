@@ -65,7 +65,7 @@ const Home = () => {
               )}
             </p>
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold mb-12 inline-flex">
-              {t("Book a Clarity Call", "Reserver un Clarity Call")}
+              {t("Book a Clarity Call", "Book un Clarity Call")}
             </a>
           </ScrollFadeIn>
 
@@ -124,7 +124,7 @@ const Home = () => {
         titleEn="Ready to lead differently?"
         titleFr="Pret(e) a reprendre la main ?"
         subtitleEn="Book your free 30-min Clarity Call. No pitch. Just an honest conversation."
-        subtitleFr="Reservez un Clarity Call gratuit de 30 minutes. Sans engagement. Une vraie conversation."
+        subtitleFr="Book un Clarity Call gratuit de 30 minutes. Sans engagement. Une vraie conversation."
         variant="teal"
       />
     </main>
