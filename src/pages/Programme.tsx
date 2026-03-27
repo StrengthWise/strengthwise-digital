@@ -4,6 +4,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
 import { Check, Minus } from "lucide-react";
+import loicImg from "@/assets/Loic.jpeg";
 
 const Programme = () => {
   const { lang, t } = useLang();
@@ -37,7 +38,7 @@ const Programme = () => {
     { quote: "Un soutien formidable pour retrouver mon intelligence positive quand les défis de la vie m'ont ébranlée. Son expérience et son professionnalisme font une vraie différence.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finlande" },
     { quote: "Sa capacité d'écoute remarquable a posé les bases d'une expérience de coaching vraiment personnalisée. Sa façon de mêler idées pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam L.", role: "Account Manager, UK" },
     { quote: "Travailler avec Raphaelle a été incroyablement enrichissant. Elle m'a aidée à construire de bonnes habitudes, à définir une vision stratégique pour mon activité et à la faire avancer sans m'épuiser.", name: "Katie L.", role: "Partner, ESG, UK" },
-    { quote: "8 mois à travailler ensemble sur des sujets variés et la capacité d'adapter l'accompagnement au fil des besoins a été un réel plaisir. Raphaelle est toujours disponible et prête à s'adapter.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France" },
+    { quote: "8 mois à travailler ensemble sur des sujets variés et la capacité d'adapter l'accompagnement au fil des besoins a été un réel plaisir. Raphaelle est toujours disponible et prête à s'adapter.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France", image: loicImg },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
@@ -168,7 +169,7 @@ const Programme = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <ScrollFadeIn key={i}>
-                <TestimonialCard quote={t.quote} name={t.name} role={t.role} />
+                <TestimonialCard quote={t.quote} name={t.name} role={t.role} image={(t as any).image} />
               </ScrollFadeIn>
             ))}
           </div>
