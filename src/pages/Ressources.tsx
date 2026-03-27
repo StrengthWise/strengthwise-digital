@@ -27,12 +27,25 @@ const Ressources = () => {
               </div>
             </ScrollFadeIn>
 
-            {/* LinkedIn */}
+            {/* LinkedIn Raphaelle */}
             <ScrollFadeIn>
               <div className="card-sw flex flex-col h-full">
-                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">LinkedIn</h3>
+                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("Raphaelle on LinkedIn", "Raphaelle sur LinkedIn")}</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
-                  {t("Follow StrengthWise on LinkedIn.", "Suivre StrengthWise sur LinkedIn.")}
+                  {t("Insights on leadership, performance and well-being.", "Réflexions sur le leadership, la performance et le bien-être.")}
+                </p>
+                <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
+                  LinkedIn <ExternalLink size={14} />
+                </a>
+              </div>
+            </ScrollFadeIn>
+
+            {/* LinkedIn StrengthWise */}
+            <ScrollFadeIn>
+              <div className="card-sw flex flex-col h-full">
+                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("StrengthWise on LinkedIn", "StrengthWise sur LinkedIn")}</h3>
+                <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
+                  {t("Follow the company page for regular updates.", "Suivre la page pour des contenus réguliers.")}
                 </p>
                 <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
                   LinkedIn <ExternalLink size={14} />
