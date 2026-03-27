@@ -40,9 +40,9 @@ const Footer = () => {
             </div>
             <button
               onClick={() => setLang(lang === "en" ? "fr" : "en")}
-              className="mt-4 text-sm border border-white/30 rounded px-3 py-1 hover:bg-white/10 transition-colors"
+              className="mt-4 text-xl leading-none hover:opacity-80 transition-opacity"
             >
-              {lang === "en" ? "Francais" : "English"}
+              {lang === "en" ? "🇫🇷" : "🇬🇧"}
             </button>
           </div>
         </div>

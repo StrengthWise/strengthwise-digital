@@ -52,7 +52,7 @@ const Programme = () => {
               {t("90-day precision mental fitness for leaders under pressure.", "90 jours de mental fitness haute precision pour dirigeants et managers sous pression.")}
             </p>
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold">
-              {t("Book a Clarity Call", "Reserver un Clarity Call")}
+              {t("Book a Clarity Call", "Book un Clarity Call")}
             </a>
           </ScrollFadeIn>
         </div>
@@ -180,7 +180,7 @@ const Programme = () => {
         titleEn="Ready to reclaim control?"
         titleFr="Pret(e) a reprendre la main ?"
         subtitleEn="Book a free 30-min Clarity Call. No pitch, no pressure. Just a diagnostic and an honest conversation."
-        subtitleFr="Reservez un Clarity Call de 30 minutes. Gratuit, sans engagement. Un mini-diagnostic et une conversation honnete."
+        subtitleFr="Book un Clarity Call de 30 minutes. Gratuit, sans engagement. Un mini-diagnostic et une conversation honnete."
         variant="teal"
       />
     </main>

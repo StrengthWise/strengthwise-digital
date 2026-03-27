@@ -29,7 +29,7 @@ const CTASection: React.FC<CTASectionProps> = ({ titleEn, titleFr, subtitleEn, s
           rel="noopener noreferrer"
           className={isTeal ? "btn-white-teal" : "btn-gold"}
         >
-          {t("Book a Clarity Call", "Reserver un Clarity Call")}
+          {t("Book a Clarity Call", "Book un Clarity Call")}
         </a>
       </div>
     </section>
