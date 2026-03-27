@@ -87,7 +87,7 @@ const Home = () => {
 
       {/* 3 Pillars */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "#384c58" }}>
-        <div className="container max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center text-center">
           {pillars.map((p, i) => (
             <ScrollFadeIn key={i}>
               <div className="text-center md:text-left">
