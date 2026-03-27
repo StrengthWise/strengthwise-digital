@@ -16,11 +16,11 @@ const SocialProof = () => {
   ];
 
   const accreditations = [
-    { name: "EMCC", logo: emccLogo },
-    { name: "IIN Integrative Nutrition", logo: iinLogo },
-    { name: "EWOB", logo: ewobLogo },
-    { name: "Flow Research Collective", logo: flowLogo },
-    { name: "Positive Intelligence", logo: pqLogo },
+    { name: "EMCC", logo: emccLogo, objectPos: "center top" },
+    { name: "IIN Integrative Nutrition", logo: iinLogo, objectPos: "center" },
+    { name: "EWOB", logo: ewobLogo, objectPos: "center" },
+    { name: "Flow Research Collective", logo: flowLogo, objectPos: "center" },
+    { name: "Positive Intelligence", logo: pqLogo, objectPos: "center" },
   ];
 
   return (
@@ -38,13 +38,14 @@ const SocialProof = () => {
           {accreditations.map((item, i) => (
             <div
               key={i}
-              className="h-14 w-36 rounded-xl bg-white border border-sw-teal/10 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-default shadow-sm p-2"
+              className="h-14 w-36 rounded-xl bg-white border border-sw-teal/10 overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-default shadow-sm"
               title={item.name}
             >
               <img
                 src={item.logo}
                 alt={item.name}
-                className="max-h-full max-w-full object-contain"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: item.objectPos }}
               />
             </div>
           ))}
