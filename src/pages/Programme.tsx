@@ -169,7 +169,7 @@ const Programme = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <ScrollFadeIn key={i}>
-                <TestimonialCard quote={t.quote} name={t.name} role={t.role} />
+                <TestimonialCard quote={t.quote} name={t.name} role={t.role} image={(t as any).image} />
               </ScrollFadeIn>
             ))}
           </div>
