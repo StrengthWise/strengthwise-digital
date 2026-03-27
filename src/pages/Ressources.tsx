@@ -53,7 +53,20 @@ const Ressources = () => {
               </div>
             </ScrollFadeIn>
 
-            {/* Book */}
+            {/* YouTube */}
+            <ScrollFadeIn>
+              <div className="card-sw flex flex-col h-full">
+                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Video / YouTube Channel</h3>
+                <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
+                  {t("Short videos and webinars available here.", "Vidéos courtes et webinaires disponibles ici.")}
+                </p>
+                <a href="https://www.youtube.com/@Strengthwise" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
+                  YouTube <ExternalLink size={14} />
+                </a>
+              </div>
+            </ScrollFadeIn>
+
+
             <ScrollFadeIn>
               <div className="card-sw flex flex-col h-full">
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Sustainable Performance</h3>
