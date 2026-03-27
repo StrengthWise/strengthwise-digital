@@ -20,6 +20,7 @@ import delphineImg from "@/assets/Delphine.jpeg";
 import mailysImg from "@/assets/Mailys.jpeg";
 import solenneImg from "@/assets/Solenne.jpeg";
 import lucileImg from "@/assets/Lucile.jpeg";
+import natasaImg from "@/assets/Natasa.jpeg";
 
 const Programme = () => {
   const { lang, t } = useLang();
@@ -58,6 +59,7 @@ const Programme = () => {
     { quote: "This coaching helped me grow, regain balance and self-confidence. Thank you for the rich exchanges, the practical and concrete exercises, and the reading recommendations.", name: "Delphine V.", role: "HSE Expert, France", image: delphineImg },
     { quote: "Raphaelle supported me in a space of trust, with efficiency and kindness, during a major transition period. Her listening skills, wise advice and constant support were decisive in my growth.", name: "Maïlys B.", role: "Product Manager, France", image: mailysImg },
     { quote: "Her gentle and open-minded coaching brought me a great deal. She knows how to listen and use all the tools at her disposal in a very effective and pragmatic way.", name: "Solenne V.", role: "Director, France", image: solenneImg },
+    { quote: "Working with Raphaelle is an investment in learning how to own your greatness. Her creativity, tools and resources create a safe space where transformation becomes possible.", name: "Natasa P.", role: "Homeopath and Lecturer, UK", image: natasaImg },
   ];
 
   const testimonialsFr = [
@@ -75,6 +77,7 @@ const Programme = () => {
     { quote: "Cet accompagnement m'a permis de grandir, de retrouver un équilibre et une confiance en moi. Merci pour les échanges riches, les exercices pratiques et concrets, et les conseils de lectures.", name: "Delphine V.", role: "Expert HSE, France", image: delphineImg },
     { quote: "Raphaelle m'a accompagnée dans un espace de confiance avec efficacité et bienveillance durant une période de transition importante. Sa capacité d'écoute, ses conseils avisés et son soutien constant ont été déterminants dans mon évolution.", name: "Maïlys B.", role: "Product Manager, France", image: mailysImg },
     { quote: "Son accompagnement en douceur et avec beaucoup d'ouverture m'a beaucoup apporté. Elle sait écouter et utiliser tous les outils qu'elle a à sa disposition de manière très efficace et pragmatique.", name: "Solenne V.", role: "Director, France", image: solenneImg },
+    { quote: "Travailler avec Raphaelle, c'est investir dans l'apprentissage de sa propre grandeur. Sa créativité, ses outils et ses ressources créent un espace sûr où la transformation devient possible.", name: "Natasa P.", role: "Homéopathe et enseignante, UK", image: natasaImg },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
