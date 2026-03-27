@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import WaveTransition from "@/components/WaveTransition";
 import { ExternalLink } from "lucide-react";
 
 const Ressources = () => {
@@ -7,16 +8,40 @@ const Ressources = () => {
 
   return (
     <main>
+      {/* Hero */}
       <section className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container max-w-5xl mx-auto px-4">
+        <div className="container max-w-3xl mx-auto px-4 text-center">
           <ScrollFadeIn>
-            <h1 className="section-title text-center mb-12">{t("Further thinking", "Pour aller plus loin")}</h1>
+            <h1 className="section-title mb-4">{t("Further thinking", "Pour aller plus loin")}</h1>
+            <div
+              className="w-16 h-0.5 mx-auto mb-6"
+              style={{ background: "linear-gradient(90deg, #c5922f, #e8b45a)" }}
+            />
+            <p className="font-body text-muted-foreground">
+              {t(
+                "Articles, videos, and tools to deepen your thinking on performance and leadership.",
+                "Articles, vidéos et outils pour approfondir ta réflexion sur la performance et le leadership."
+              )}
+            </p>
           </ScrollFadeIn>
+        </div>
+      </section>
 
+      <WaveTransition from="#ffffff" to="#faf9f7" />
+
+      {/* Cards grid */}
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
+        <div className="container max-w-5xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Newsletter */}
             <ScrollFadeIn>
-              <div className="card-sw flex flex-col h-full">
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Newsletter / Substack</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("Thinking on performance, clarity and leadership, straight to your inbox.", "Réflexions sur la performance, la clarté et le leadership, directement dans ta boîte mail.")}
@@ -29,7 +54,13 @@ const Ressources = () => {
 
             {/* LinkedIn Raphaelle */}
             <ScrollFadeIn>
-              <div className="card-sw flex flex-col h-full">
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("Raphaelle on LinkedIn", "Raphaelle sur LinkedIn")}</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("Insights on leadership, performance and well-being.", "Réflexions sur le leadership, la performance et le bien-être.")}
@@ -42,7 +73,13 @@ const Ressources = () => {
 
             {/* LinkedIn StrengthWise */}
             <ScrollFadeIn>
-              <div className="card-sw flex flex-col h-full">
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("StrengthWise on LinkedIn", "StrengthWise sur LinkedIn")}</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("Follow the company page for regular updates.", "Suivre la page pour des contenus réguliers.")}
@@ -55,7 +92,13 @@ const Ressources = () => {
 
             {/* YouTube */}
             <ScrollFadeIn>
-              <div className="card-sw flex flex-col h-full">
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Video / YouTube Channel</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("Short videos and webinars available here.", "Vidéos courtes et webinaires disponibles ici.")}
@@ -66,9 +109,15 @@ const Ressources = () => {
               </div>
             </ScrollFadeIn>
 
-
+            {/* Book */}
             <ScrollFadeIn>
-              <div className="card-sw flex flex-col h-full">
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Sustainable Performance</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("The book on combining peak performance with well-being.", "Le livre sur la performance durable.")}
@@ -81,7 +130,13 @@ const Ressources = () => {
 
             {/* Cards */}
             <ScrollFadeIn>
-              <div className="card-sw flex flex-col h-full">
+              <div
+                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
+                style={{
+                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
+                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                }}
+              >
                 <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">Mighty Mind Coaching Cards</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("54 coaching cards. NLP, positive psychology, critical thinking in a single deck.", "54 cartes de coaching. PNL, psychologie positive et pensée critique en un seul jeu.")}

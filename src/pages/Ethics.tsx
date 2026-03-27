@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import WaveTransition from "@/components/WaveTransition";
 
 const Ethics = () => {
   const { t } = useLang();
@@ -29,27 +30,49 @@ const Ethics = () => {
   const principles = t("en", "fr") === "fr" ? principlesFr : principlesEn;
 
   return (
-    <main className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
-      <div className="container max-w-3xl mx-auto px-4">
-        <ScrollFadeIn>
-          <h1 className="section-title mb-4">{t("CODE OF ETHICS", "CODE D'ÉTHIQUE")}</h1>
-          <p className="font-body text-muted-foreground mb-8">
-            {t(
-              "These are the principles that guide our work as coaches.",
-              "Voici les principes qui guident notre travail en tant que coachs."
-            )}
-          </p>
-        </ScrollFadeIn>
-
-        {principles.map((p, i) => (
-          <ScrollFadeIn key={i}>
-            <div className="mb-6">
-              <h3 className="font-display font-bold text-sw-teal text-base mb-1">{p.title}</h3>
-              <p className="font-body text-foreground text-sm leading-relaxed">{p.text}</p>
-            </div>
+    <main>
+      {/* Hero */}
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container max-w-3xl mx-auto px-4 text-center">
+          <ScrollFadeIn>
+            <h1 className="section-title mb-4">{t("CODE OF ETHICS", "CODE D'ÉTHIQUE")}</h1>
+            <div
+              className="w-16 h-0.5 mx-auto mb-6"
+              style={{ background: "linear-gradient(90deg, #c5922f, #e8b45a)" }}
+            />
+            <p className="font-body text-muted-foreground">
+              {t(
+                "These are the principles that guide our work as coaches.",
+                "Voici les principes qui guident notre travail en tant que coachs."
+              )}
+            </p>
           </ScrollFadeIn>
-        ))}
-      </div>
+        </div>
+      </section>
+
+      <WaveTransition from="#ffffff" to="#faf9f7" />
+
+      {/* Principles */}
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
+        <div className="container max-w-3xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {principles.map((p, i) => (
+              <ScrollFadeIn key={i}>
+                <div
+                  className="bg-card rounded-2xl p-6 h-full transition-all duration-300 hover:translate-y-[-2px]"
+                  style={{
+                    boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
+                    border: "1px solid hsl(204 22% 28% / 0.06)",
+                  }}
+                >
+                  <h3 className="font-display font-bold text-sw-teal text-base mb-2">{p.title}</h3>
+                  <p className="font-body text-foreground text-sm leading-relaxed">{p.text}</p>
+                </div>
+              </ScrollFadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

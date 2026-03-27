@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import WaveTransition from "@/components/WaveTransition";
 
 const Terms = () => {
   const { t } = useLang();
@@ -33,32 +34,55 @@ const Terms = () => {
   const sections = t("en", "fr") === "fr" ? sectionsFr : sectionsEn;
 
   return (
-    <main className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
-      <div className="container max-w-3xl mx-auto px-4">
-        <ScrollFadeIn>
-          <h1 className="section-title mb-2">{t("THE WAY WE DO BUSINESS", "NOTRE FAÇON DE TRAVAILLER")}</h1>
-          <h2 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-lg mb-8">
-            {t("COACHING AND CONSULTING AGREEMENT", "ACCORD DE COACHING ET DE CONSEIL")}
-          </h2>
-          <p className="font-body text-muted-foreground mb-8">
-            {t(
-              "Welcome to our coaching and consulting services. Before we begin, please read and understand the terms below.",
-              "Bienvenue dans nos services de coaching et de conseil. Avant de commencer, merci de lire et comprendre les conditions ci-dessous."
-            )}
-          </p>
-        </ScrollFadeIn>
-
-        {sections.map((s, i) => (
-          <ScrollFadeIn key={i}>
-            <div className="mb-6">
-              <h3 className="font-display font-bold text-sw-teal text-base mb-1">{s.title}</h3>
-              <p className="font-body text-foreground text-sm leading-relaxed">{s.text}</p>
-            </div>
+    <main>
+      {/* Hero */}
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container max-w-3xl mx-auto px-4 text-center">
+          <ScrollFadeIn>
+            <h1 className="section-title mb-2">{t("THE WAY WE DO BUSINESS", "NOTRE FAÇON DE TRAVAILLER")}</h1>
+            <h2 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-lg mb-4">
+              {t("COACHING AND CONSULTING AGREEMENT", "ACCORD DE COACHING ET DE CONSEIL")}
+            </h2>
+            <div
+              className="w-16 h-0.5 mx-auto mb-6"
+              style={{ background: "linear-gradient(90deg, #c5922f, #e8b45a)" }}
+            />
+            <p className="font-body text-muted-foreground">
+              {t(
+                "Welcome to our coaching and consulting services. Before we begin, please read and understand the terms below.",
+                "Bienvenue dans nos services de coaching et de conseil. Avant de commencer, merci de lire et comprendre les conditions ci-dessous."
+              )}
+            </p>
           </ScrollFadeIn>
-        ))}
+        </div>
+      </section>
 
-        <p className="font-body text-sm text-muted-foreground mt-8">Questions : info@strengthwise.co</p>
-      </div>
+      <WaveTransition from="#ffffff" to="#faf9f7" />
+
+      {/* Terms */}
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
+        <div className="container max-w-3xl mx-auto px-4">
+          <div
+            className="rounded-2xl p-8 md:p-10"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "0 4px 24px -6px hsl(204 22% 28% / 0.06), 0 1px 8px -2px hsl(204 22% 28% / 0.03)",
+              border: "1px solid hsl(204 22% 28% / 0.06)",
+            }}
+          >
+            {sections.map((s, i) => (
+              <ScrollFadeIn key={i}>
+                <div className="mb-6 last:mb-0">
+                  <h3 className="font-display font-bold text-sw-teal text-base mb-1">{s.title}</h3>
+                  <p className="font-body text-foreground text-sm leading-relaxed">{s.text}</p>
+                </div>
+              </ScrollFadeIn>
+            ))}
+          </div>
+
+          <p className="font-body text-sm text-muted-foreground mt-8 text-center">Questions : info@strengthwise.co</p>
+        </div>
+      </section>
     </main>
   );
 };

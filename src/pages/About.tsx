@@ -42,6 +42,9 @@ const About = () => {
                   src="/images/raphaelle.png"
                   alt="Raphaelle Hernu"
                   className="w-[260px] md:w-[300px] h-auto rounded-2xl object-cover"
+                  style={{
+                    boxShadow: "0 12px 40px -12px hsl(204 22% 28% / 0.18), 0 4px 16px -4px hsl(204 22% 28% / 0.06)",
+                  }}
                 />
               </div>
             </ScrollFadeIn>
@@ -55,7 +58,14 @@ const About = () => {
                 </p>
                 <div className="flex flex-col gap-2">
                   {badges.map((b, i) => (
-                    <span key={i} className="block text-xs font-body px-3 py-1.5 rounded-full bg-sw-cream text-sw-teal border border-sw-teal/10">
+                    <span
+                      key={i}
+                      className="block text-xs font-body px-3 py-1.5 rounded-full border border-sw-teal/10"
+                      style={{
+                        backgroundColor: "hsl(37 71% 96%)",
+                        color: "hsl(204 22% 28%)",
+                      }}
+                    >
                       {b}
                     </span>
                   ))}
@@ -67,18 +77,27 @@ const About = () => {
       </section>
 
       {/* Long-form */}
-      <section className="bg-sw-cream py-16 md:py-20">
+      <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
         <div className="container max-w-3xl mx-auto px-4">
           <ScrollFadeIn>
             <p className="text-sm text-muted-foreground font-body mb-8 italic">
               {t("The longer version, for those who want to know more.", "La version longue, pour ceux qui veulent aller plus loin.")}
             </p>
           </ScrollFadeIn>
-          {blocks.map((b, i) => (
-            <ScrollFadeIn key={i}>
-              <p className="font-body text-foreground leading-relaxed mb-6">{t(b.en, b.fr)}</p>
-            </ScrollFadeIn>
-          ))}
+          <div
+            className="rounded-2xl p-8 md:p-10"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "0 4px 24px -6px hsl(204 22% 28% / 0.06), 0 1px 8px -2px hsl(204 22% 28% / 0.03)",
+              border: "1px solid hsl(204 22% 28% / 0.06)",
+            }}
+          >
+            {blocks.map((b, i) => (
+              <ScrollFadeIn key={i}>
+                <p className="font-body text-foreground leading-relaxed mb-6 last:mb-0">{t(b.en, b.fr)}</p>
+              </ScrollFadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
