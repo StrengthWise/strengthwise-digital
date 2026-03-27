@@ -36,7 +36,7 @@ const Terms = () => {
     <main className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
       <div className="container max-w-3xl mx-auto px-4">
         <ScrollFadeIn>
-          <h1 className="section-title mb-2">{t("THE WAY WE DO BUSINESS", "CONDITIONS GÉNÉRALES")}</h1>
+          <h1 className="section-title mb-2">{t("THE WAY WE DO BUSINESS", "NOTRE FAÇON DE TRAVAILLER")}</h1>
           <h2 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-lg mb-8">
             {t("COACHING AND CONSULTING AGREEMENT", "ACCORD DE COACHING ET DE CONSEIL")}
           </h2>

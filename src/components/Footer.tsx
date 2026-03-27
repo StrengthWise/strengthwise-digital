@@ -26,8 +26,8 @@ const Footer = () => {
             <h4 className="font-display font-bold text-sm mb-3 uppercase tracking-wider">{t("Legal", "Mentions")}</h4>
             <div className="space-y-2 text-sm font-body">
               <Link to="/privacy" className="block hover:text-white transition-colors">{t("Privacy Policy", "Politique de confidentialité")}</Link>
-              <Link to="/terms" className="block hover:text-white transition-colors">{t("Terms and Conditions", "Conditions générales")}</Link>
-              <Link to="/ethics" className="block hover:text-white transition-colors">{t("Code of Ethics", "Code de déontologie")}</Link>
+              <Link to="/terms" className="block hover:text-white transition-colors">{t("Terms and Conditions", "Notre façon de travailler")}</Link>
+              <Link to="/ethics" className="block hover:text-white transition-colors">{t("Code of Ethics", "Code d'éthique")}</Link>
             </div>
           </div>
           <div>

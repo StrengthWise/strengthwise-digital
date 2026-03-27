@@ -32,7 +32,7 @@ const Ethics = () => {
     <main className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
       <div className="container max-w-3xl mx-auto px-4">
         <ScrollFadeIn>
-          <h1 className="section-title mb-4">{t("CODE OF ETHICS", "CODE DE DÉONTOLOGIE")}</h1>
+          <h1 className="section-title mb-4">{t("CODE OF ETHICS", "CODE D'ÉTHIQUE")}</h1>
           <p className="font-body text-muted-foreground mb-8">
             {t(
               "These are the principles that guide our work as coaches.",
