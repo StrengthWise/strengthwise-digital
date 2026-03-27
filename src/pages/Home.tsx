@@ -5,6 +5,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
 import armelleImg from "@/assets/Armelle.jpeg";
+import jphilippeImg from "@/assets/JPhilippe.jpeg";
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
 
   const testimonialsFr = [
     { quote: "Ces six mois ont été une vraie parenthèse dans mon quotidien managérial. J'en ressors plus forte. J'ai acquis la capacité de prendre du recul, mieux déléguer, et travailler la vision de mon management.", name: "Armelle L.", role: "Manager Commerciale, Arval BNP Paribas", image: armelleImg },
-    { quote: "Raphaelle sait avec beaucoup de talent et de délicatesse amener les participants à travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France" },
+    { quote: "Raphaelle sait avec beaucoup de talent et de délicatesse amener les participants à travailler en confiance et en profondeur.", name: "Jean-Philippe B.", role: "Managing Director, France", image: jphilippeImg },
     { quote: "Travailler avec Raphaelle a été un vrai voyage, personnellement et professionnellement. Sa capacité à engager sur des sujets profonds rend chaque session précieuse.", name: "Maud P.", role: "Linguiste, UK" },
   ];
 
