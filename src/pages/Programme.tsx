@@ -16,6 +16,7 @@ import elodieImg from "@/assets/Elodie.jpeg";
 import valerieImg from "@/assets/Valerie.png";
 import yannickImg from "@/assets/Yannick.jpeg";
 import laetitiaImg from "@/assets/Laetitia.jpeg";
+import delphineImg from "@/assets/Delphine.jpeg";
 
 const Programme = () => {
   const { lang, t } = useLang();
@@ -51,6 +52,7 @@ const Programme = () => {
     { quote: "Thanks to Raphaelle, I gained confidence and assurance in my role. She created a simple yet perfectly calibrated space for exchange, where I immediately felt at ease. Her perspective and her questions truly helped me grow.", name: "Laetitia R.", role: "Marketing & Communications Manager, France", image: laetitiaImg },
     { quote: "Raphaelle helped me better navigate my day-to-day. A very positive experience that allowed me to grow in my current role.", name: "Yves-Michel C.", role: "Team Manager, Belgium" },
     { quote: "Raphaelle offered me various tools that I easily adopted in my daily life. Her coaching was a source of tremendous learning and growth, with a genuine understanding of my needs, my journey and my challenges.", name: "Lucile R.", role: "Global Communication Manager, France" },
+    { quote: "This coaching helped me grow, regain balance and self-confidence. Thank you for the rich exchanges, the practical and concrete exercises, and the reading recommendations.", name: "Delphine V.", role: "HSE Expert, France", image: delphineImg },
   ];
 
   const testimonialsFr = [
@@ -65,6 +67,7 @@ const Programme = () => {
     { quote: "Grâce à Raphaelle, j'ai gagné en confiance et en assurance dans mon rôle. Elle a su créer un cadre d'échange simple et très juste, dans lequel je me suis tout de suite sentie à l'aise. Son regard et ses questions m'ont vraiment aidée à progresser.", name: "Laetitia R.", role: "Responsable Marketing et Communication, France", image: laetitiaImg },
     { quote: "Raphaelle m'a permis de mieux appréhender mon quotidien. Une très bonne expérience qui m'a permis d'évoluer sur mon poste actuel.", name: "Yves-Michel C.", role: "Responsable d'équipe, Belgique" },
     { quote: "Raphaelle m'a proposé divers outils que j'ai facilement adoptés au quotidien. Son accompagnement a été source de beaucoup d'apprentissage et d'évolution, avec une vraie compréhension de mes besoins, de mon parcours et de mes challenges.", name: "Lucile R.", role: "Global Communication Manager, France" },
+    { quote: "Cet accompagnement m'a permis de grandir, de retrouver un équilibre et une confiance en moi. Merci pour les échanges riches, les exercices pratiques et concrets, et les conseils de lectures.", name: "Delphine V.", role: "Expert HSE, France", image: delphineImg },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
