@@ -13,6 +13,7 @@ import maudImg from "@/assets/Maud.jpeg";
 import armelleImg from "@/assets/Armelle.jpeg";
 import saraImg from "@/assets/Sara.png";
 import elodieImg from "@/assets/Elodie.jpeg";
+import valerieImg from "@/assets/Valerie.png";
 
 const Programme = () => {
   const { lang, t } = useLang();
@@ -43,6 +44,7 @@ const Programme = () => {
     { quote: "8 months working together on a wide range of topics, and the ability to adapt the coaching as needs evolved was a real pleasure. Raphaelle is always available and ready to adjust.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France", image: loicImg },
     { quote: "In just a few months, with a highly actionable toolkit, I was able to shift my mindset and move past certain sticking points, with tangible positive outcomes: stronger client presence, optimised organisation. Raphaelle manages to challenge you gently and identify areas for growth you wouldn't have spotted on your own.", name: "Sara Z.", role: "Sustainable Finance, SocGen, Paris", image: saraImg },
     { quote: "The goal of this coaching was to strengthen my ability to delegate, improve my cross-functional management posture, and clarify my managerial identity. The benefits have been significant and lasting, both in my professional practices and in my quality of life at work.", name: "Elodie V.", role: "Payroll Manager, France", image: elodieImg },
+    { quote: "At key moments in a career, surrounding yourself with the right people makes all the difference. Raphaelle helped me step back and refine my leadership posture. My main takeaway: the importance of a caring outside perspective that brings out your own solutions.", name: "Valérie L.", role: "Director, Banque Populaire", image: valerieImg },
   ];
 
   const testimonialsFr = [
@@ -52,6 +54,7 @@ const Programme = () => {
     { quote: "8 mois à travailler ensemble sur des sujets variés et la capacité d'adapter l'accompagnement au fil des besoins a été un réel plaisir. Raphaelle est toujours disponible et prête à s'adapter.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France", image: loicImg },
     { quote: "En quelques mois et aidée d'une boîte à outils très actionnable, j'ai pu faire évoluer mon mindset et dépasser certains points de blocage, avec des retombées positives concrètes : meilleure posture client, organisation optimisée. Raphaelle parvient à challenger en douceur et identifier des axes de travail qu'on n'aurait pas identifiés seul.", name: "Sara Z.", role: "Sustainable Finance, SocGen, Paris", image: saraImg },
     { quote: "Cet accompagnement avait pour objectifs de renforcer ma capacité à déléguer, d'améliorer ma posture en management transverse et de clarifier mon identité managériale. Les bénéfices sont significatifs et durables, tant dans mes pratiques professionnelles que dans ma qualité de vie au travail.", name: "Elodie V.", role: "Payroll Manager, France", image: elodieImg },
+    { quote: "Dans les moments clés d'une trajectoire, s'entourer des bonnes personnes fait toute la différence. Raphaelle m'a permis de prendre du recul et d'affiner ma posture. Ce que j'en retiens : l'importance d'un regard extérieur bienveillant qui fait émerger mes propres solutions.", name: "Valérie L.", role: "Directrice, Banque Populaire", image: valerieImg },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
