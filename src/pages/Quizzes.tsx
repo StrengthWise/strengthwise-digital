@@ -33,7 +33,7 @@ const Quizzes = () => {
             <p className="font-body text-muted-foreground text-center max-w-3xl mx-auto mb-4">
               {t(
                 "Before we talk, take one of these assessments. They're not personality games. They're precision tools, built to give you a clear picture of where you are and what to work on first. Most of my clients start here. It takes 5 to 15 minutes. The results go straight to your inbox.",
-                "Avant qu'on se parle, fais un ou plusieurs de ces quiz. Ce ne sont pas des tests de personnalité ludiques. Ce sont des outils de précision, conçus pour te donner une image claire de là où tu en es, et de ce sur quoi travailler en premier. La plupart de mes clients commencent par là. Ça prend 5 à 15 minutes. Les résultats arrivent directement dans ta boîte mail."
+                "Ces outils ne sont pas que des tests de personnalité. Ce sont des outils de précision, conçus pour te donner une image claire de là où tu en es et de ce sur quoi travailler en premier. Chaque quiz prend entre 5 et 15 minutes. Les résultats arrivent directement dans ta boîte mail."
               )}
             </p>
             <p className="text-center text-sm font-body text-muted-foreground mb-12 italic">
