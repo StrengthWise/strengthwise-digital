@@ -38,13 +38,13 @@ const SocialProof = () => {
           {accreditations.map((item, i) => (
             <div
               key={i}
-              className="h-14 w-36 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-default shadow-sm border border-sw-teal/10"
+              className="h-14 w-36 rounded-xl bg-white border border-sw-teal/10 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-default shadow-sm p-2"
               title={item.name}
             >
               <img
                 src={item.logo}
                 alt={item.name}
-                className="w-full h-full object-cover"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
           ))}
