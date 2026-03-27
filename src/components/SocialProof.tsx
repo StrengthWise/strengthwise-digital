@@ -1,4 +1,9 @@
 import { useLang } from "@/i18n/LanguageContext";
+import emccLogo from "@/assets/logos/EMCC.png";
+import iinLogo from "@/assets/logos/IIN.png";
+import ewobLogo from "@/assets/logos/EWOB.png";
+import flowLogo from "@/assets/logos/Flow_Research_Collective.png";
+import pqLogo from "@/assets/logos/Positive_Intelligence.png";
 
 const SocialProof = () => {
   const { t } = useLang();
@@ -10,7 +15,13 @@ const SocialProof = () => {
     { value: "3", label: t("publications", "publications") },
   ];
 
-  const accreditations = ["EMCC", "IIN Integrative Nutrition", "EWOB", "Flow Research Collective", "Positive Intelligence"];
+  const accreditations = [
+    { name: "EMCC", logo: emccLogo },
+    { name: "IIN Integrative Nutrition", logo: iinLogo },
+    { name: "EWOB", logo: ewobLogo },
+    { name: "Flow Research Collective", logo: flowLogo },
+    { name: "Positive Intelligence", logo: pqLogo },
+  ];
 
   return (
     <section className="bg-sw-cream py-16 md:py-20">
@@ -23,13 +34,18 @@ const SocialProof = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-          {accreditations.map((name, i) => (
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-10">
+          {accreditations.map((item, i) => (
             <div
               key={i}
-              className="px-4 py-2 rounded-full border border-sw-teal/20 text-xs font-body text-muted-foreground grayscale hover:grayscale-0 transition-all duration-300 cursor-default"
+              className="w-16 h-16 rounded-full bg-white border border-sw-teal/10 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-default shadow-sm"
+              title={item.name}
             >
-              {name}
+              <img
+                src={item.logo}
+                alt={item.name}
+                className="w-12 h-12 object-contain"
+              />
             </div>
           ))}
         </div>
