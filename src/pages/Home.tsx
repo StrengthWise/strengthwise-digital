@@ -71,13 +71,15 @@ const Home = () => {
 
           {/* Video placeholder */}
           <ScrollFadeIn>
-            <div className="mx-auto max-w-[380px] h-[200px] rounded-xl flex flex-col items-center justify-center gap-3 cursor-pointer hover:opacity-90 transition-opacity" style={{ backgroundColor: "#2e3f4a" }}>
-              <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: "linear-gradient(135deg, #c5922f, #e8b45a)" }}>
-                <Play size={24} className="text-white ml-1" />
-              </div>
-              <span className="text-white/80 text-sm font-body">
-                {t("Meet Raphaelle - 60 sec", "Rencontre Raphaelle - 60 sec")}
-              </span>
+            <div className="mx-auto max-w-[380px] rounded-xl overflow-hidden" style={{ backgroundColor: "#2e3f4a" }}>
+              <video
+                key={t("en", "fr")}
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-auto rounded-xl"
+                src={t("/videos/CoachHub_Intro_Eng.mp4", "/videos/CoachHub_Intro_Fren.mp4")}
+              />
             </div>
           </ScrollFadeIn>
         </div>
