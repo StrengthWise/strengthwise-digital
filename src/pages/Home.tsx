@@ -4,7 +4,7 @@ import SocialProof from "@/components/SocialProof";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
-import { Play } from "lucide-react";
+
 
 const Home = () => {
   const { t } = useLang();
