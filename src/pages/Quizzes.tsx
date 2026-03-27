@@ -1,5 +1,6 @@
 import { useLang } from "@/i18n/LanguageContext";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import { Compass, Brain, ShieldAlert, BarChart3, Zap, Share2, Crown, HeartPulse, LucideIcon } from "lucide-react";
 
 interface Quiz {
   title: string;
@@ -8,17 +9,18 @@ interface Quiz {
   descFr: string;
   linkEn: string;
   linkFr: string;
+  icon: LucideIcon;
 }
 
 const quizzes: Quiz[] = [
-  { title: "DISC", descEn: "How do you communicate, decide, and influence? The DISC model reveals your dominant behavioural style and how to work with others more effectively.", descFr: "Comment communiques-tu, décides-tu, influes-tu ? Le modèle DISC révèle ton style comportemental dominant et comment travailler plus efficacement avec les autres.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/AWNSegUX", linkFr: "https://n3x9yc2lsn3.typeform.com/to/VXwJBGCB" },
-  { title: "Meet Your Saboteurs", titleFr: "Rencontre tes Saboteurs", descEn: "What's the voice in your head that holds you back? Identify your mental saboteurs - the patterns that undermine your performance under pressure.", descFr: "Quelle est la voix dans ta tête qui te freine ? Identifie tes saboteurs mentaux - les schémas qui minent ta performance sous pression.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/nfX6K4Xo", linkFr: "https://n3x9yc2lsn3.typeform.com/to/nt2W1JTD" },
-  { title: "Mental Fitness Score", descEn: "How strong is your mental muscle right now? This is your baseline - the starting point for everything we'll work on.", descFr: "Où en est ton mental fitness aujourd'hui ? C'est ton point de départ, la base de tout ce sur quoi on va travailler.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/nozddA5i", linkFr: "https://n3x9yc2lsn3.typeform.com/to/uGtHIRDD" },
-  { title: "Performance SustainAbility", descEn: "Break performance down into 8 key dimensions. See where you're solid and where the cracks are forming.", descFr: "Décortique ta performance en 8 dimensions clés. Vois où tu es solide et où les fissures apparaissent.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/rF7VGTax", linkFr: "https://n3x9yc2lsn3.typeform.com/to/pQB85riu" },
-  { title: "Modus Operandi", descEn: "How do you naturally take action - not think, act? Inspired by the Kolbe model, this reveals your instinctive operating style.", descFr: "Comment agis-tu naturellement - pas ce que tu penses, ce que tu fais ? Inspiré du modèle Kolbe, ce quiz révèle ton style opératoire instinctif.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/GmMOaw1J", linkFr: "https://n3x9yc2lsn3.typeform.com/to/zuZF9UCV" },
-  { title: "Delegat'Score", descEn: "Are you delegating, or just redistributing your own workload? Assess your real delegation practices.", descFr: "Tu délègues, ou tu redistribues juste ta propre charge ? Évalue tes pratiques réelles de délégation.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/R0NpZ4PF", linkFr: "https://n3x9yc2lsn3.typeform.com/to/nJLwotGI" },
-  { title: "Leadership Profiler", descEn: "What's your leadership impact? This assessment maps your style, your strengths, and your blind spots as a leader.", descFr: "Quel est ton impact en tant que leader ? Cet outil cartographie ton style, tes forces et tes angles morts.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/uWFLOhQ0", linkFr: "https://n3x9yc2lsn3.typeform.com/to/YkdCsVUi" },
-  { title: "TeamBeat", descEn: "What's the real pulse of your team? For managers who need an honest read on engagement and performance.", descFr: "Quel est le vrai pouls de ton équipe ? Pour les managers qui veulent une lecture honnête de l'engagement et de la performance.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/K9wsHsg0", linkFr: "https://n3x9yc2lsn3.typeform.com/to/M6v4jU2g" },
+  { title: "DISC", icon: Compass, descEn: "How do you communicate, decide, and influence? The DISC model reveals your dominant behavioural style and how to work with others more effectively.", descFr: "Comment communiques-tu, décides-tu, influes-tu ? Le modèle DISC révèle ton style comportemental dominant et comment travailler plus efficacement avec les autres.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/AWNSegUX", linkFr: "https://n3x9yc2lsn3.typeform.com/to/VXwJBGCB" },
+  { title: "Mental Fitness Score", icon: Brain, descEn: "How strong is your mental muscle right now? This is your baseline - the starting point for everything we'll work on.", descFr: "Où en est ton mental fitness aujourd'hui ? C'est ton point de départ, la base de tout ce sur quoi on va travailler.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/nozddA5i", linkFr: "https://n3x9yc2lsn3.typeform.com/to/uGtHIRDD" },
+  { title: "Meet Your Saboteurs", titleFr: "Rencontre tes Saboteurs", icon: ShieldAlert, descEn: "What's the voice in your head that holds you back? Identify your mental saboteurs - the patterns that undermine your performance under pressure.", descFr: "Quelle est la voix dans ta tête qui te freine ? Identifie tes saboteurs mentaux - les schémas qui minent ta performance sous pression.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/nfX6K4Xo", linkFr: "https://n3x9yc2lsn3.typeform.com/to/nt2W1JTD" },
+  { title: "Performance SustainAbility", icon: BarChart3, descEn: "Break performance down into 8 key dimensions. See where you're solid and where the cracks are forming.", descFr: "Décortique ta performance en 8 dimensions clés. Vois où tu es solide et où les fissures apparaissent.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/rF7VGTax", linkFr: "https://n3x9yc2lsn3.typeform.com/to/pQB85riu" },
+  { title: "Modus Operandi", icon: Zap, descEn: "How do you naturally take action - not think, act? Inspired by the Kolbe model, this reveals your instinctive operating style.", descFr: "Comment agis-tu naturellement - pas ce que tu penses, ce que tu fais ? Inspiré du modèle Kolbe, ce quiz révèle ton style opératoire instinctif.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/GmMOaw1J", linkFr: "https://n3x9yc2lsn3.typeform.com/to/zuZF9UCV" },
+  { title: "Delegat'Score", icon: Share2, descEn: "Are you delegating, or just redistributing your own workload? Assess your real delegation practices.", descFr: "Tu délègues, ou tu redistribues juste ta propre charge ? Évalue tes pratiques réelles de délégation.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/R0NpZ4PF", linkFr: "https://n3x9yc2lsn3.typeform.com/to/nJLwotGI" },
+  { title: "Leadership Profiler", icon: Crown, descEn: "What's your leadership impact? This assessment maps your style, your strengths, and your blind spots as a leader.", descFr: "Quel est ton impact en tant que leader ? Cet outil cartographie ton style, tes forces et tes angles morts.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/uWFLOhQ0", linkFr: "https://n3x9yc2lsn3.typeform.com/to/YkdCsVUi" },
+  { title: "TeamBeat", icon: HeartPulse, descEn: "What's the real pulse of your team? For managers who need an honest read on engagement and performance.", descFr: "Quel est le vrai pouls de ton équipe ? Pour les managers qui veulent une lecture honnête de l'engagement et de la performance.", linkEn: "https://n3x9yc2lsn3.typeform.com/to/K9wsHsg0", linkFr: "https://n3x9yc2lsn3.typeform.com/to/M6v4jU2g" },
 ];
 
 const Quizzes = () => {
@@ -32,8 +34,8 @@ const Quizzes = () => {
             <h1 className="section-title text-center mb-4">{t("Where do you start?", "Par où commencer ?")}</h1>
             <p className="font-body text-muted-foreground text-center max-w-3xl mx-auto mb-4">
               {t(
-                "Before we talk, take one of these assessments. They're not personality games. They're precision tools, built to give you a clear picture of where you are and what to work on first. Most of my clients start here. It takes 5 to 15 minutes. The results go straight to your inbox.",
-                "Ces outils ne sont pas que des tests de personnalité. Ce sont des outils de précision, conçus pour te donner une image claire de là où tu en es et de ce sur quoi travailler en premier. Chaque quiz prend entre 5 et 15 minutes. Les résultats arrivent directement dans ta boîte mail."
+                "Before we talk, take one of these assessments. They're not personality games. They're precision tools, built to give you a clear picture of where you are and what to work on first. Most of my clients start here. It takes 5 to 15 minutes per quiz. The results go straight to your inbox.",
+                "Ces outils ne sont pas que des tests de personnalité. Ce sont des outils de précision, conçus pour te donner une image claire de là où tu en es et de ce sur quoi travailler en premier. Chaque quiz prend entre 5 et 15 minutes par quiz. Les résultats arrivent directement dans ta boîte mail."
               )}
             </p>
             <p className="text-center text-sm font-body text-muted-foreground mb-12 italic">
@@ -42,26 +44,30 @@ const Quizzes = () => {
           </ScrollFadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {quizzes.map((q, i) => (
-              <ScrollFadeIn key={i}>
-                <div className="card-sw-gold flex flex-col h-full">
-                  <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">
-                    {lang === "fr" && q.titleFr ? q.titleFr : q.title}
-                  </h3>
-                  <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
-                    {t(q.descEn, q.descFr)}
-                  </p>
-                  <a
-                    href={lang === "fr" ? q.linkFr : q.linkEn}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-gold text-xs self-start"
-                  >
-                    {t("Take the quiz", "Faire le quiz")}
-                  </a>
-                </div>
-              </ScrollFadeIn>
-            ))}
+            {quizzes.map((q, i) => {
+              const Icon = q.icon;
+              return (
+                <ScrollFadeIn key={i}>
+                  <div className="card-sw-gold flex flex-col h-full">
+                    <Icon className="text-primary mb-3" size={28} strokeWidth={1.8} />
+                    <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">
+                      {lang === "fr" && q.titleFr ? q.titleFr : q.title}
+                    </h3>
+                    <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
+                      {t(q.descEn, q.descFr)}
+                    </p>
+                    <a
+                      href={lang === "fr" ? q.linkFr : q.linkEn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-gold text-xs self-start"
+                    >
+                      {t("Take the quiz", "Faire le quiz")}
+                    </a>
+                  </div>
+                </ScrollFadeIn>
+              );
+            })}
           </div>
 
           <ScrollFadeIn>
