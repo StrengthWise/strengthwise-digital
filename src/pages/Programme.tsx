@@ -49,6 +49,7 @@ const Programme = () => {
     { quote: "At key moments in a career, surrounding yourself with the right people makes all the difference. Raphaelle helped me step back and refine my leadership posture. My main takeaway: the importance of a caring outside perspective that brings out your own solutions.", name: "Valérie L.", role: "Director, Banque Populaire", image: valerieImg },
     { quote: "From our very first session, Raphaelle's attentiveness and insightfulness stood out. She created a safe and open environment that encouraged me to explore my challenges. Each session was thoughtfully tailored to my needs, and she helped me navigate various situations with greater confidence.", name: "Yannick D.", role: "Global Chief Underwriting Officer, Switzerland", image: yannickImg },
     { quote: "Thanks to Raphaelle, I gained confidence and assurance in my role. She created a simple yet perfectly calibrated space for exchange, where I immediately felt at ease. Her perspective and her questions truly helped me grow.", name: "Laetitia R.", role: "Marketing & Communications Manager, France", image: laetitiaImg },
+    { quote: "Raphaelle helped me better navigate my day-to-day. A very positive experience that allowed me to grow in my current role.", name: "Yves-Michel C.", role: "Team Manager, Belgium" },
   ];
 
   const testimonialsFr = [
@@ -61,6 +62,7 @@ const Programme = () => {
     { quote: "Dans les moments clés d'une trajectoire, s'entourer des bonnes personnes fait toute la différence. Raphaelle m'a permis de prendre du recul et d'affiner ma posture. Ce que j'en retiens : l'importance d'un regard extérieur bienveillant qui fait émerger mes propres solutions.", name: "Valérie L.", role: "Directrice, Banque Populaire", image: valerieImg },
     { quote: "Dès notre première session, l'attention et la perspicacité de Raphaelle se sont démarquées. Elle a créé un environnement sûr et ouvert qui m'a encouragé à explorer mes défis. Chaque session était soigneusement adaptée à mes besoins, et elle m'a aidé à naviguer différentes situations avec plus de confiance.", name: "Yannick D.", role: "Global Chief Underwriting Officer, Suisse", image: yannickImg },
     { quote: "Grâce à Raphaelle, j'ai gagné en confiance et en assurance dans mon rôle. Elle a su créer un cadre d'échange simple et très juste, dans lequel je me suis tout de suite sentie à l'aise. Son regard et ses questions m'ont vraiment aidée à progresser.", name: "Laetitia R.", role: "Responsable Marketing et Communication, France", image: laetitiaImg },
+    { quote: "Raphaelle m'a permis de mieux appréhender mon quotidien. Une très bonne expérience qui m'a permis d'évoluer sur mon poste actuel.", name: "Yves-Michel C.", role: "Responsable d'équipe, Belgique" },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
