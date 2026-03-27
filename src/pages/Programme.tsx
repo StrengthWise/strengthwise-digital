@@ -18,13 +18,13 @@ const Programme = () => {
 
   const features = [
     { label: t("12 sessions / 90 days", "12 sessions / 90 jours"), standard: true, augmented: true },
-    { label: t("Positive Intelligence Programme", "Programme Positive Intelligence"), standard: true, augmented: true },
+    { label: t("Positive Intelligence foundations (1-hour masterclass + programme principles)", "Fondamentaux de la Positive Intelligence (masterclass d'1h + principes du programme)"), standard: true, augmented: true },
     { label: t("Personalised action plan", "Plan d'action personnalisé"), standard: true, augmented: true },
     { label: t("Weekly follow-up emails", "Emails de suivi hebdomadaires"), standard: true, augmented: true },
     { label: t("Flow Principles (Steven Kotler)", "Flow Principles (Steven Kotler)"), standard: false, augmented: true },
-    { label: t("GPT tools between sessions", "Outils GPT entre les sessions"), standard: false, augmented: true },
+    { label: t("AI tools between sessions (to support your progress)", "Outils IA entre les sessions (pour soutenir ta progression)"), standard: false, augmented: true },
     { label: t("2 follow-up sessions (D+30, D+60)", "2 sessions de suivi (J+30, J+60)"), standard: false, augmented: true },
-    { label: t("Async support (WhatsApp/Voxer)", "Support asynchrone (WhatsApp/Voxer)"), standard: false, augmented: true },
+    { label: t("Async support via WhatsApp", "Support asynchrone via WhatsApp"), standard: false, augmented: true },
   ];
 
   const testimonialsEn = [
@@ -37,6 +37,7 @@ const Programme = () => {
     { quote: "Un soutien formidable pour retrouver mon intelligence positive quand les défis de la vie m'ont ébranlée. Son expérience et son professionnalisme font une vraie différence.", name: "Marie-Zoé B.", role: "Board Director, HR Consulting, Finlande" },
     { quote: "Sa capacité d'écoute remarquable a posé les bases d'une expérience de coaching vraiment personnalisée. Sa façon de mêler idées pertinentes et perspectives nouvelles rend chaque session unique et transformatrice.", name: "Sam L.", role: "Account Manager, UK" },
     { quote: "Travailler avec Raphaelle a été incroyablement enrichissant. Elle m'a aidée à construire de bonnes habitudes, à définir une vision stratégique pour mon activité et à la faire avancer sans m'épuiser.", name: "Katie L.", role: "Partner, ESG, UK" },
+    { quote: "8 mois à travailler ensemble sur des sujets variés et la capacité d'adapter l'accompagnement au fil des besoins a été un réel plaisir. Raphaelle est toujours disponible et prête à s'adapter.", name: "Loïc D.", role: "HRIS Manager, Pernod Ricard France" },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
