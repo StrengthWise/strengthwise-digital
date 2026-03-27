@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-sm mb-3 uppercase tracking-wider">{t("Connect", "Suivez-nous")}</h4>
             <div className="space-y-2 text-sm font-body">
-              <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (Raphaëlle)</a>
+              <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (Raphaelle)</a>
               <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="block hover:text-white transition-colors">LinkedIn (StrengthWise)</a>
               <a href="#" className="block hover:text-white transition-colors">Instagram</a>
               <a href="#" className="block hover:text-white transition-colors">Facebook</a>
