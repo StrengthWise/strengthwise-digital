@@ -13,7 +13,7 @@ const WaveTransition: React.FC<WaveTransitionProps> = ({ from, to, mid }) => {
       <div
         className="absolute inset-0"
         style={{
-          background: `linear-gradient(180deg, ${from} 0%, ${midColor} 55%, ${to} 100%)`,
+          background: from,
         }}
       />
       <svg
