@@ -8,7 +8,7 @@ const About = () => {
   const { t } = useLang();
 
   const badges = [
-    t("Trained in Positive Intelligence (Shirzad Chamine)", "Formée à la Positive Intelligence (Shirzad Chamine)"),
+    t("Trained in Positive Intelligence (Shirzad Chamine)", "Formée à l'Intelligence Positive (Shirzad Chamine)"),
     t("Trained in Flow Science (Steven Kotler, Flow Research Collective)", "Formée à la science du Flow (Steven Kotler, Flow Research Collective)"),
     t("NLP Master Practitioner (ANLP, UK)", "Praticienne PNL Master (ANLP, UK)"),
     t("IIN Integrative Health Coach", "Coach en santé intégrative (IIN)"),
