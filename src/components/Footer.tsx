@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: "#384c58" }} className="text-white/90 pt-10 pb-12">
       <div className="container max-w-6xl mx-auto px-4">
-        <div className="w-1/2 mx-auto mb-16" style={{ borderTop: "3px solid #c5922f" }} />
+        <div className="w-3/5 mx-auto mb-16" style={{ borderTop: "3px solid #c5922f" }} />
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <img src="/images/logo-white.png" alt="StrengthWise" className="h-10 mb-4" />
