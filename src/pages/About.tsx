@@ -82,11 +82,6 @@ const About = () => {
       {/* Long-form */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
         <div className="container max-w-3xl mx-auto px-4">
-          <ScrollFadeIn>
-            <p className="text-sm text-muted-foreground font-body mb-8 italic">
-              {t("The longer version, for those who want to know more.", "La version longue, pour ceux qui veulent aller plus loin.")}
-            </p>
-          </ScrollFadeIn>
           <div
             className="rounded-2xl p-8 md:p-10"
             style={{
