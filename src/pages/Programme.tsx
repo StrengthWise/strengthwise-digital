@@ -109,38 +109,33 @@ const Programme = () => {
         </div>
       </section>
 
-      <WaveTransition from="#ffffff" to="#fdf8f0" />
-
-      {/* Problem */}
-      <section className="bg-sw-cream py-16 md:py-20">
-        <div className="container max-w-2xl mx-auto px-4 text-center">
+      {/* Problem — dark teal block */}
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#384c58" }}>
+        <div className="container max-w-3xl mx-auto px-4 text-center">
           <ScrollFadeIn>
-            <div className="bg-card rounded-2xl px-8 py-10 md:px-12 md:py-12" style={{ boxShadow: "0 4px 30px -8px hsl(204 22% 28% / 0.06)" }}>
-              <p className="font-body text-foreground text-lg leading-relaxed">
-                {t(
-                  "You're performing. But you're running on willpower. The mental load keeps building, decisions pile up, and clarity fades. You know this can't go on.",
-                  "Tu performes. Mais tu tiens à bout de bras. La charge mentale augmente, les arbitrages s'accumulent, la clarté mentale diminue. Tu sais que ça ne peut pas durer comme ça."
-                )}
-              </p>
-            </div>
+            <p className="font-display text-white text-xl md:text-2xl lg:text-3xl leading-relaxed font-medium">
+              {t(
+                "You're performing. But you're running on willpower. The mental load keeps building, decisions pile up, and clarity fades. You know this can't go on.",
+                "Tu performes. Mais tu tiens à bout de bras. La charge mentale augmente, les arbitrages s'accumulent, la clarté mentale diminue. Tu sais que ça ne peut pas durer comme ça."
+              )}
+            </p>
           </ScrollFadeIn>
         </div>
       </section>
 
-      <WaveTransition from="#fdf8f0" to="#ffffff" />
+      <WaveTransition from="#384c58" to="#ffffff" />
 
-      {/* Promise */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container max-w-2xl mx-auto px-4 text-center">
+      {/* Promise — light with gold divider */}
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container max-w-3xl mx-auto px-4 text-center">
           <ScrollFadeIn>
-            <div className="bg-card rounded-2xl px-8 py-10 md:px-12 md:py-12" style={{ boxShadow: "0 4px 30px -8px hsl(37 60% 48% / 0.08)" }}>
-              <p className="font-body text-foreground text-lg leading-relaxed font-medium">
-                {t(
-                  "We don't eliminate pressure. We change the way your mind and leadership respond to it. That's precision mental fitness.",
-                  "On ne supprime pas la pression. On change la façon dont ton mental et ton leadership y répondent. C'est ça, le fitness mental haute précision."
-                )}
-              </p>
-            </div>
+            <div className="w-[60px] h-[2px] mx-auto mb-8" style={{ backgroundColor: "#c5922f" }} />
+            <p className="font-display text-foreground text-xl md:text-2xl lg:text-3xl leading-relaxed font-medium">
+              {t(
+                "We don't eliminate pressure. We change the way your mind and leadership respond to it. That's precision mental fitness.",
+                "On ne supprime pas la pression. On change la façon dont ton mental et ton leadership y répondent. C'est ça, le fitness mental haute précision."
+              )}
+            </p>
           </ScrollFadeIn>
         </div>
       </section>
