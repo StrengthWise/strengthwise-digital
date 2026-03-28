@@ -72,6 +72,7 @@ const Home = () => {
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold mb-12 inline-flex">
               {t("Book a Clarity Call", "Book un Clarity Call")}
             </a>
+            <div className="w-1/2 mx-auto mt-8 border-t border-border" />
           </ScrollFadeIn>
 
           {/* Video */}
