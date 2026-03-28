@@ -120,6 +120,8 @@ const Quizzes = () => {
           </ScrollFadeIn>
         </div>
       </section>
+
+      <WaveTransition from="#fdf8f0" to="#384c58" />
     </main>
   );
 };
