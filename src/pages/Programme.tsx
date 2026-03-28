@@ -35,7 +35,7 @@ const Programme = () => {
 
   const features = [
     { label: t("12 sessions / 90 days", "12 sessions / 90 jours"), standard: true, augmented: true },
-    { label: t("Positive Intelligence foundations (1-hour masterclass + programme principles)", "Fondamentaux de la Positive Intelligence (masterclass d'1h + principes du programme)"), standard: true, augmented: true },
+    { label: t("Positive Intelligence foundations (1-hour masterclass + programme principles)", "Fondamentaux de l'Intelligence Positive (masterclass d'1h + principes du programme)"), standard: true, augmented: true },
     { label: t("Personalised action plan", "Plan d'action personnalisé"), standard: true, augmented: true },
     { label: t("Weekly follow-up emails", "Emails de suivi hebdomadaires"), standard: true, augmented: true },
     { label: t("Flow Principles (Steven Kotler)", "Flow Principles (Steven Kotler)"), standard: false, augmented: true },
