@@ -114,7 +114,7 @@ const Programme = () => {
               <p className="font-body text-foreground text-lg leading-relaxed">
                 {t(
                   "You're performing. But you're running on willpower. The mental load keeps building, decisions pile up, and clarity fades. You know this can't go on.",
-                  "Tu performes. Mais tu tiens à la force du poignet. La charge mentale monte, les arbitrages s'accumulent, la clarté recule. Tu sais que ça ne peut pas durer comme ça."
+                  ""Tu performes. Mais tu tiens à bout de bras. La charge mentale augmente, les arbitrages s'accumulent, la clarté mentale diminue. Tu sais que ça ne peut pas durer comme ça.""
                 )}
               </p>
             </div>
