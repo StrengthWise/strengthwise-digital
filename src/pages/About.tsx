@@ -92,7 +92,7 @@ const About = () => {
           >
             {blocks.map((b, i) => (
               <ScrollFadeIn key={i}>
-                <p className="font-body text-foreground leading-relaxed mb-6 last:mb-0">{t(b.en, b.fr)}</p>
+                <p className="font-body text-foreground leading-relaxed mb-8 last:mb-0">{t(b.en, b.fr)}</p>
               </ScrollFadeIn>
             ))}
           </div>
