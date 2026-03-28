@@ -96,16 +96,16 @@ const Quizzes = () => {
         </div>
       </section>
 
-      <WaveTransition from="#faf9f7" to="#ffffff" />
+      <WaveTransition from="#faf9f7" to="#fdf8f0" />
 
       {/* Bottom note */}
-      <section className="py-12 md:py-16" style={{ backgroundColor: "#ffffff" }}>
+      <section className="py-12 md:py-16" style={{ backgroundColor: "#fdf8f0" }}>
         <div className="container max-w-2xl mx-auto px-4">
           <ScrollFadeIn>
             <div
               className="rounded-2xl p-8 text-center"
               style={{
-                backgroundColor: "hsl(37 71% 96%)",
+                backgroundColor: "#ffffff",
                 boxShadow: "0 2px 12px -4px hsl(204 22% 28% / 0.05)",
                 border: "1px solid hsl(37 64% 48% / 0.1)",
               }}
