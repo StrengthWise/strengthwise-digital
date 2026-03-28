@@ -2,6 +2,7 @@ import { useLang } from "@/i18n/LanguageContext";
 import SocialProof from "@/components/SocialProof";
 import CTASection from "@/components/CTASection";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import WaveTransition from "@/components/WaveTransition";
 
 const About = () => {
   const { t } = useLang();
