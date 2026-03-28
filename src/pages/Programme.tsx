@@ -95,7 +95,7 @@ const Programme = () => {
             <h1 className="section-title mb-6 text-3xl md:text-4xl">FROM PRESSURE TO CLARITY</h1>
             <div className="w-12 h-[2px] mx-auto mb-6" style={{ background: "linear-gradient(90deg, hsl(37 64% 48%), hsl(37 68% 63%))" }} />
             <p className="font-body text-muted-foreground text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-              {t("90-day precision mental fitness for leaders under pressure.", "90 jours de fitness mental haute précision pour dirigeants et managers sous pression.")})}
+              {t("90-day precision mental fitness for leaders under pressure.", "90 jours de fitness mental haute précision pour dirigeants et managers sous pression.")}}
             </p>
             <a href="https://calendly.com/strengthwise/discovery" target="_blank" rel="noopener noreferrer" className="btn-gold">
               {t("Book a Clarity Call", "Book un Clarity Call")}
