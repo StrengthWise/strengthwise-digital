@@ -94,11 +94,13 @@ const About = () => {
               border: "1px solid hsl(204 22% 28% / 0.06)",
             }}
           >
-            {blocks.map((b, i) => (
-              <ScrollFadeIn key={i}>
-                <p className="font-body text-foreground leading-relaxed mb-8 last:mb-0">{t(b.en, b.fr)}</p>
-              </ScrollFadeIn>
-            ))}
+            <div className="flex flex-col gap-10">
+              {blocks.map((b, i) => (
+                <ScrollFadeIn key={i}>
+                  <p className="font-body text-foreground leading-relaxed">{t(b.en, b.fr)}</p>
+                </ScrollFadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
