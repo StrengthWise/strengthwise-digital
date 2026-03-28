@@ -77,6 +77,8 @@ const About = () => {
         </div>
       </section>
 
+      <WaveTransition from="#ffffff" to="#faf9f7" />
+
       {/* Long-form */}
       <section className="py-16 md:py-20" style={{ backgroundColor: "#faf9f7" }}>
         <div className="container max-w-3xl mx-auto px-4">
@@ -102,7 +104,11 @@ const About = () => {
         </div>
       </section>
 
+      <WaveTransition from="#faf9f7" to="#fdf8f0" />
+
       <SocialProof />
+
+      <WaveTransition from="#fdf8f0" to="#384c58" />
 
       <CTASection
         titleEn="Want to work together? Let's talk."
