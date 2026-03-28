@@ -142,7 +142,7 @@ const Home = () => {
 
       <SocialProof />
 
-      <WaveTransition from="#fdf8f0" to="#ffffff" />
+      <WaveTransition from="#fdf8f0" to="#384c58" />
 
       <CTASection
         titleEn="Ready to lead differently?"
