@@ -62,6 +62,7 @@ const Programme = () => {
     { quote: "Her gentle and open-minded coaching brought me a great deal. She knows how to listen and use all the tools at her disposal in a very effective and pragmatic way.", name: "Solenne V.", role: "Director, France", image: solenneImg },
     { quote: "Working with Raphaelle is an investment in learning how to own your greatness. Her creativity, tools and resources create a safe space where transformation becomes possible.", name: "Natasa P.", role: "Homeopath and Lecturer, UK", image: natasaImg },
     { quote: "Following an open conflict within my team, Raphaelle's intervention helped restore dialogue and led to concrete adjustments in our ways of working. The atmosphere improved significantly, exchanges became smoother, and collaboration was strengthened.", name: "Ajni K.", role: "Team Leader, Switzerland", image: ajniImg },
+    { quote: "Thank you for your support and for giving me the keys to unlock my emotions. A precious coaching experience during an important period.", name: "Amandine N.", role: "HR Partner, France" },
   ];
 
   const testimonialsFr = [
@@ -81,6 +82,7 @@ const Programme = () => {
     { quote: "Son accompagnement en douceur et avec beaucoup d'ouverture m'a beaucoup apporté. Elle sait écouter et utiliser tous les outils qu'elle a à sa disposition de manière très efficace et pragmatique.", name: "Solenne V.", role: "Director, France", image: solenneImg },
     { quote: "Travailler avec Raphaelle, c'est investir dans l'apprentissage de sa propre grandeur. Sa créativité, ses outils et ses ressources créent un espace sûr où la transformation devient possible.", name: "Natasa P.", role: "Homéopathe et enseignante, UK", image: natasaImg },
     { quote: "Suite à un conflit ouvert au sein de mon équipe, l'intervention de Raphaelle a permis de rétablir le dialogue et d'aboutir à des ajustements concrets dans nos façons de travailler. Le climat s'est nettement amélioré, les échanges sont devenus plus fluides et la collaboration s'est renforcée.", name: "Ajni K.", role: "Team Leader, Suisse", image: ajniImg },
+    { quote: "Merci pour ton accompagnement et pour m'avoir donné les clés pour déverrouiller mes émotions. Un accompagnement précieux dans une période importante.", name: "Amandine N.", role: "HR Partner, France" },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
