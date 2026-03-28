@@ -84,11 +84,11 @@ const Ressources = () => {
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
                   {t("Insights on leadership, performance and well-being. Follow us for regular updates.", "Réflexions sur le leadership, la performance et le bien-être. Suivez-nous pour des contenus réguliers.")}
                 </p>
-                <div className="flex flex-col gap-2">
-                  <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2">
+                <div className="flex flex-col gap-2 items-start">
+                  <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2 px-4 py-2">
                     Raphaelle <ExternalLink size={14} />
                   </a>
-                  <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2">
+                  <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2 px-4 py-2">
                     StrengthWise <ExternalLink size={14} />
                   </a>
                 </div>
