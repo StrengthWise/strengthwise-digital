@@ -179,6 +179,8 @@ const Ressources = () => {
           </div>
         </div>
       </section>
+
+      <WaveTransition from="#faf9f7" to="#384c58" />
     </main>
   );
 };
