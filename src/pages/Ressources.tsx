@@ -71,7 +71,7 @@ const Ressources = () => {
               </div>
             </ScrollFadeIn>
 
-            {/* LinkedIn Raphaelle */}
+            {/* LinkedIn / Insights */}
             <ScrollFadeIn>
               <div
                 className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
@@ -80,32 +80,18 @@ const Ressources = () => {
                   boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
                 }}
               >
-                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("Raphaelle on LinkedIn", "Raphaelle sur LinkedIn")}</h3>
+                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">LinkedIn / Insights</h3>
                 <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
-                  {t("Insights on leadership, performance and well-being.", "Réflexions sur le leadership, la performance et le bien-être.")}
+                  {t("Insights on leadership, performance and well-being. Follow us for regular updates.", "Réflexions sur le leadership, la performance et le bien-être. Suivez-nous pour des contenus réguliers.")}
                 </p>
-                <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
-                  LinkedIn <ExternalLink size={14} />
-                </a>
-              </div>
-            </ScrollFadeIn>
-
-            {/* LinkedIn StrengthWise */}
-            <ScrollFadeIn>
-              <div
-                className="flex flex-col h-full bg-card rounded-2xl p-6 md:p-8 transition-all duration-300 hover:translate-y-[-2px]"
-                style={{
-                  border: "0.5px solid hsl(204 22% 28% / 0.1)",
-                  boxShadow: "0 4px 20px -6px hsl(204 22% 28% / 0.06), 0 1px 6px -2px hsl(204 22% 28% / 0.03)",
-                }}
-              >
-                <h3 className="font-display font-bold text-sw-teal uppercase tracking-[2px] text-base mb-2">{t("StrengthWise on LinkedIn", "StrengthWise sur LinkedIn")}</h3>
-                <p className="font-body text-sm text-muted-foreground mb-4 flex-1">
-                  {t("Follow the company page for regular updates.", "Suivre la page pour des contenus réguliers.")}
-                </p>
-                <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs self-start inline-flex items-center gap-2">
-                  LinkedIn <ExternalLink size={14} />
-                </a>
+                <div className="flex flex-wrap gap-2">
+                  <a href="https://www.linkedin.com/in/raphaellehernu/" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2">
+                    Raphaelle <ExternalLink size={14} />
+                  </a>
+                  <a href="https://www.linkedin.com/company/strengthwise" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs inline-flex items-center gap-2">
+                    StrengthWise <ExternalLink size={14} />
+                  </a>
+                </div>
               </div>
             </ScrollFadeIn>
 
