@@ -61,8 +61,8 @@ const Programme = () => {
     { quote: "Raphaelle supported me in a space of trust, with efficiency and kindness, during a major transition period. Her listening skills, wise advice and constant support were decisive in my growth.", name: "Maïlys B.", role: "Product Manager, France", image: mailysImg },
     { quote: "Her gentle and open-minded coaching brought me a great deal. She knows how to listen and use all the tools at her disposal in a very effective and pragmatic way.", name: "Solenne V.", role: "Director, France", image: solenneImg },
     { quote: "Working with Raphaelle is an investment in learning how to own your greatness. Her creativity, tools and resources create a safe space where transformation becomes possible.", name: "Natasa P.", role: "Homeopath and Lecturer, UK", image: natasaImg },
-    { quote: "Raphaelle helped me better navigate my day-to-day. A very positive experience that allowed me to grow in my current role.", name: "Yves-Michel C.", role: "Team Manager, Belgium" },
     { quote: "Thank you for your support and for giving me the keys to unlock my emotions. A precious coaching experience during an important period.", name: "Amandine N.", role: "HR Partner, France" },
+    { quote: "Raphaelle helped me better navigate my day-to-day. A very positive experience that allowed me to grow in my current role.", name: "Yves-Michel C.", role: "Team Manager, Belgium" },
   ];
 
   const testimonialsFr = [
@@ -81,8 +81,8 @@ const Programme = () => {
     { quote: "Raphaelle m'a accompagnée dans un espace de confiance avec efficacité et bienveillance durant une période de transition importante. Sa capacité d'écoute, ses conseils avisés et son soutien constant ont été déterminants dans mon évolution.", name: "Maïlys B.", role: "Product Manager, France", image: mailysImg },
     { quote: "Son accompagnement en douceur et avec beaucoup d'ouverture m'a beaucoup apporté. Elle sait écouter et utiliser tous les outils qu'elle a à sa disposition de manière très efficace et pragmatique.", name: "Solenne V.", role: "Director, France", image: solenneImg },
     { quote: "Travailler avec Raphaelle, c'est investir dans l'apprentissage de sa propre grandeur. Sa créativité, ses outils et ses ressources créent un espace sûr où la transformation devient possible.", name: "Natasa P.", role: "Homéopathe et enseignante, UK", image: natasaImg },
-    { quote: "Raphaelle m'a permis de mieux appréhender mon quotidien. Une très bonne expérience qui m'a permis d'évoluer sur mon poste actuel.", name: "Yves-Michel C.", role: "Responsable d'équipe, Belgique" },
     { quote: "Merci pour ton accompagnement et pour m'avoir donné les clés pour déverrouiller mes émotions. Un accompagnement précieux dans une période importante.", name: "Amandine N.", role: "HR Partner, France" },
+    { quote: "Raphaelle m'a permis de mieux appréhender mon quotidien. Une très bonne expérience qui m'a permis d'évoluer sur mon poste actuel.", name: "Yves-Michel C.", role: "Responsable d'équipe, Belgique" },
   ];
 
   const testimonials = lang === "fr" ? testimonialsFr : testimonialsEn;
