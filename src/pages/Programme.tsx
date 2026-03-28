@@ -109,6 +109,8 @@ const Programme = () => {
         </div>
       </section>
 
+      <WaveTransition from="#ffffff" to="#384c58" />
+
       {/* Problem — dark teal block */}
       <section className="py-16 md:py-24" style={{ backgroundColor: "#384c58" }}>
         <div className="container max-w-3xl mx-auto px-4 text-center">
