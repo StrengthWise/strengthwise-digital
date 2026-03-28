@@ -30,7 +30,7 @@ const Programme = () => {
     { en: "Decisions pile up and your clarity is fading", fr: "Les arbitrages s'accumulent et ta clarté recule" },
     { en: "You're still standing, but you need to reclaim control", fr: "Tu tiens encore la route, mais tu as besoin de reprendre la main" },
     { en: "You want concrete coaching, not comfort coaching", fr: "Tu cherches un accompagnement concret, pas du coaching confort" },
-    { en: "You don't have access to coaching through your company", fr: "Tu n'as pas accès au coaching via ton entreprise" },
+    { en: "You don't have access to premium coaching through your company", fr: "Tu n'as pas accès à un coaching premium via ton entreprise" },
   ];
 
   const features = [
