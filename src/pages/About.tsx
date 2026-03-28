@@ -13,7 +13,7 @@ const About = () => {
     t("NLP Master Practitioner (ANLP, UK)", "Praticienne PNL Master (ANLP, UK)"),
     t("IIN Integrative Health Coach", "Coach en santé intégrative (IIN)"),
     t("EWOB Board Readiness Program", "Programme EWOB Board Readiness"),
-    t("Bilingual French-English (British national)", "Bilingue français-anglais (nationalité britannique)"),
+    t("Bilingual (Franco-British national)", "Bilingue (nationalité franco-britannique)"),
   ];
 
   const blocks = [
@@ -61,11 +61,11 @@ const About = () => {
                     "Vingt ans en finance internationale, entre Paris et Londres. J'ai vécu la pression des environnements à forts enjeux de l'intérieur. Aujourd'hui, j'aide les dirigeants à faire ce chemin sans payer le même prix."
                   )}
                 </p>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 items-start">
                   {badges.map((b, i) => (
                     <span
                       key={i}
-                      className="block text-xs font-body px-3 py-1.5 rounded-full border border-sw-teal/10"
+                      className="inline-block text-xs font-body px-3 py-1.5 rounded-full border border-sw-teal/10 w-auto"
                       style={{
                         backgroundColor: "hsl(37 71% 96%)",
                         color: "hsl(204 22% 28%)",
