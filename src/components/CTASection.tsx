@@ -13,7 +13,7 @@ const CTASection: React.FC<CTASectionProps> = ({ titleEn, titleFr, subtitleEn, s
   const isTeal = variant === "teal";
 
   return (
-    <section className="py-16 md:py-20 text-center" style={{ backgroundColor: isTeal ? "#384c58" : "#ffffff" }}>
+    <section className="pt-16 md:pt-20 pb-8 md:pb-10 text-center" style={{ backgroundColor: isTeal ? "#384c58" : "#ffffff" }}>
       <div className="container max-w-3xl mx-auto px-4">
         <h2 className={`text-2xl md:text-3xl font-display font-bold uppercase tracking-[3px] mb-4 ${isTeal ? "text-white" : "text-sw-teal"}`}>
           {t(titleEn, titleFr)}
